@@ -1,4 +1,4 @@
-# EventCore — Intelligent Event Management & Telemetry Platform
+# Agentic AI for Smart Event Management Operations
 
 EventCore is a modern, AI-powered Event Management and Telemetry Platform designed for enterprise-grade event operational intelligence. It provides real-time registration tracking, QR-code check-ins, automated venue optimization, sponsorship tracking, incident management, and executive analytics dashboards.
 
