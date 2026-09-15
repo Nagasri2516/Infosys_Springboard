@@ -1,0 +1,10 @@
+{
+  "id": "REG-906425",
+  "to": "clark.kent@google-sim.eventcore.io",
+  "name": "Clark Kent",
+  "subject": "Registration Confirmed \u2013 REG-906425 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-906425.html",
+  "sent_at": "2026-07-31T16:52:22.146782Z",
+  "delivered": false,
+  "mode": "outbox"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "REG-710272",
+  "to": "niobe.logos@api-sim.eventcore.io",
+  "name": "Niobe Logos",
+  "subject": "Registration Confirmed \u2013 REG-710272 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-710272.html",
+  "sent_at": "2026-07-31T16:42:35.013466Z",
+  "delivered": false,
+  "mode": "outbox"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "REG-418448",
+  "to": "sophia.m@designs.com",
+  "name": "Sophia Martinez",
+  "subject": "Registration Confirmed \u2013 REG-418448 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-418448.html",
+  "sent_at": "2026-08-21T15:08:59.413030Z",
+  "delivered": false,
+  "mode": "outbox"
+}

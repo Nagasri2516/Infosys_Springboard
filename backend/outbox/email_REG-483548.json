@@ -1,0 +1,10 @@
+{
+  "id": "REG-483548",
+  "to": "alex.rivera@edu.org",
+  "name": "Alex Rivera",
+  "subject": "Registration Confirmed \u2013 REG-483548 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-483548.html",
+  "sent_at": "2026-08-11T17:40:02.962183Z",
+  "delivered": false,
+  "mode": "outbox"
+}

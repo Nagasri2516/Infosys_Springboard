@@ -1,0 +1,10 @@
+{
+  "id": "REG-758520",
+  "to": "gwen.stacy@mobile-sim.eventcore.io",
+  "name": "Gwen Stacy",
+  "subject": "Registration Confirmed \u2013 REG-758520 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-758520.html",
+  "sent_at": "2026-08-02T11:57:27.863312Z",
+  "delivered": false,
+  "mode": "outbox"
+}

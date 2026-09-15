@@ -1,0 +1,10 @@
+{
+  "id": "REG-565439",
+  "to": "alice.j@domain.com",
+  "name": "Alice Johnson",
+  "subject": "Registration Confirmed \u2013 REG-565439 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-565439.html",
+  "sent_at": "2026-09-01T16:04:16.916667Z",
+  "delivered": false,
+  "mode": "outbox"
+}

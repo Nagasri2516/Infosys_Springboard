@@ -1,0 +1,10 @@
+{
+  "id": "REG-388063",
+  "to": "laura.croft@google-sim.eventcore.io",
+  "name": "Laura Croft",
+  "subject": "Registration Confirmed \u2013 REG-388063 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-388063.html",
+  "sent_at": "2026-08-04T14:43:59.441627Z",
+  "delivered": false,
+  "mode": "outbox"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "REG-433005",
+  "to": "bruce.wayne@google-sim.eventcore.io",
+  "name": "Bruce Wayne",
+  "subject": "Registration Confirmed \u2013 REG-433005 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-433005.html",
+  "sent_at": "2026-08-02T11:57:21.699355Z",
+  "delivered": false,
+  "mode": "outbox"
+}

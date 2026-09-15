@@ -1,0 +1,18 @@
+# Python & Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+
+# Environment variables
+.env
+
+# System / Temporary files
+Thumbs.db
+.DS_Store
+~$*.pptx

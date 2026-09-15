@@ -1,0 +1,10 @@
+{
+  "id": "REG-302438",
+  "to": "d.kim@ventures.com",
+  "name": "David Kim",
+  "subject": "Registration Confirmed \u2013 REG-302438 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-302438.html",
+  "sent_at": "2026-09-01T16:04:07.704252Z",
+  "delivered": false,
+  "mode": "outbox"
+}

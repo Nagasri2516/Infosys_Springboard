@@ -1,0 +1,10 @@
+{
+  "id": "REG-842807",
+  "to": "hopper@navy.mil",
+  "name": "Dr. Grace Hopper",
+  "subject": "Registration Confirmed \u2013 REG-842807 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-842807.html",
+  "sent_at": "2026-07-31T16:07:43.471656Z",
+  "delivered": false,
+  "mode": "outbox"
+}

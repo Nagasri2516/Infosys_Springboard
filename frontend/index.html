@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventCore – Registration & Attendee Management</title>
+  <meta name="description"
+    content="Full-stack event registration, check-in, analytics, and AI insights dashboard powered by Python Flask.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div id="landing-screen" class="landing-screen">
+    <div class="landing-bg-circles">
+      <span class="circle c1"></span>
+      <span class="circle c2"></span>
+      <span class="circle c3"></span>
+    </div>
+
+    <div class="landing-content">
+      <div class="landing-brand">
+        <i class="fas fa-brain landing-logo-icon"></i>
+        <h1 class="landing-title">EventCore</h1>
+        <p class="landing-subtitle">Intelligent Event Management Platform · Milestone 1</p>
+      </div>
+
+      <p class="landing-prompt">Choose your role to continue</p>
+
+      <div class="role-cards-grid">
+        <!-- Organizer Card -->
+        <button class="role-card" id="btn-role-organizer" onclick="showPortal('organizer')">
+          <div class="role-card-icon organizer-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h2 class="role-card-title">Organizer</h2>
+          <p class="role-card-desc">Manage registrations, track check-ins, view analytics, and get AI-powered insights.
+          </p>
+          <ul class="role-card-features">
+            <li><i class="fas fa-check-circle"></i> Registration Dashboard</li>
+            <li><i class="fas fa-check-circle"></i> QR Check-in Tracking</li>
+            <li><i class="fas fa-check-circle"></i> Attendee Analytics</li>
+            <li><i class="fas fa-check-circle"></i> AI Insights Engine</li>
+          </ul>
+          <span class="role-card-btn organizer-btn">Enter Organizer Portal <i class="fas fa-arrow-right"></i></span>
+        </button>
+
+        <!-- Participant Card -->
+        <button class="role-card" id="btn-role-participant" onclick="showPortal('participant')">
+          <div class="role-card-icon participant-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h2 class="role-card-title">Participant</h2>
+          <p class="role-card-desc">Register for the event, track your status, get your QR code, and submit feedback.
+          </p>
+          <ul class="role-card-features">
+            <li><i class="fas fa-check-circle"></i> Event Registration</li>
+            <li><i class="fas fa-check-circle"></i> Registration Status</li>
+            <li><i class="fas fa-check-circle"></i> QR Code Access</li>
+            <li><i class="fas fa-check-circle"></i> Submit Feedback</li>
+          </ul>
+          <span class="role-card-btn participant-btn">Enter Participant Portal <i class="fas fa-arrow-right"></i></span>
+        </button>
+      </div>
+
+      <p class="landing-footer-note">
+        <i class="fas fa-server"></i> Powered by Flask + SQLite &nbsp;·&nbsp;
+        <i class="fas fa-shield-alt"></i> EventCore 2026
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- ORGANIZER PORTAL                                                       -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <div id="organizer-portal" class="portal-wrapper" style="display:none;">
+    <div class="app-container">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar organizer-sidebar">
+        <div>
+          <div class="brand-container">
+            <i class="fas fa-user-tie brand-icon organizer-brand-icon"></i>
+            <div>
+              <h2 class="brand-title">Organizer</h2>
+              <div class="brand-subtitle">Admin Console</div>
+            </div>
+          </div>
+
+          <ul class="sidebar-menu">
+            <li class="sidebar-nav-item active" data-tab="dashboard" data-portal="organizer">
+              <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="executive-dashboard" data-portal="organizer">
+              <i class="fas fa-crown"></i><span>Executive Dashboard</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="event-intelligence" data-portal="organizer">
+              <i class="fas fa-brain"></i><span>Event Intelligence</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="events" data-portal="organizer">
+              <i class="fas fa-calendar-star"></i><span>Events</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="checkin" data-portal="organizer">
+              <i class="fas fa-qrcode"></i><span>Check-in Station</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="analytics" data-portal="organizer">
+              <i class="fas fa-chart-pie"></i><span>Analytics</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="aiinsights" data-portal="organizer">
+              <i class="fas fa-robot"></i><span>AI Insights</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="venue-agent" data-portal="organizer">
+              <i class="fas fa-building"></i><span>Venue Agent</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="venue-optimization" data-portal="organizer">
+              <i class="fas fa-map-marked-alt"></i><span>Venue Optimization</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="speaker-agent" data-portal="organizer">
+              <i class="fas fa-microphone"></i><span>Speaker Agent</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="speaker-scheduling" data-portal="organizer">
+              <i class="fas fa-calendar-alt"></i><span>Speaker Scheduling</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="session-analytics" data-portal="organizer">
+              <i class="fas fa-chart-line"></i><span>Session Analytics</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="outbox" data-portal="organizer">
+              <i class="fas fa-envelope-open-text"></i><span>Email Outbox</span>
+              <span class="nav-badge" id="outbox-badge" style="display:none;">0</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="sponsorship-agent" data-portal="organizer">
+              <i class="fas fa-handshake"></i><span>Sponsorship Agent</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="sponsor-performance" data-portal="organizer">
+              <i class="fas fa-chart-bar"></i><span>Sponsor Performance</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="incident-agent" data-portal="organizer">
+              <i class="fas fa-user-shield"></i><span>Incident Agent</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="incident-workflows" data-portal="organizer">
+              <i class="fas fa-tasks"></i><span>Incident Workflows</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="operational-alerts" data-portal="organizer">
+              <i class="fas fa-bell"></i><span>Operational Alerts</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="e2e-testing" data-portal="organizer">
+              <i class="fas fa-vial"></i><span>End-to-End Testing</span>
+            </li>
+            <li class="sidebar-nav-item" data-tab="deployment-guide" data-portal="organizer">
+              <i class="fas fa-server"></i><span>Deployment Guide</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-footer">
+          <button class="btn-switch-role" onclick="goToLanding()">
+            <i class="fas fa-exchange-alt"></i> Switch Role
+          </button>
+          <button id="btn-reset-db" class="btn btn-outline btn-sm"
+            style="width:100%;justify-content:center;margin-top:.5rem;">
+            <i class="fas fa-trash-restore"></i> Reset Demo Data
+          </button>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content">
+
+        <!-- 1. DASHBOARD -->
+        <section id="dashboard" class="tab-content active" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Event Overview Dashboard</h1>
+              <p>Real-time stats powered by Flask + SQLite backend.</p>
+            </div>
+            <span class="api-badge"><i class="fas fa-server"></i> Connected to API</span>
+          </header>
+
+          <div class="stats-grid">
+            <div class="stat-card glass">
+              <i class="fas fa-users stat-card-icon"></i>
+              <h4>Total Registered</h4>
+              <div class="value" id="stat-total">—</div>
+              <div class="trend-indicator up"><i class="fas fa-caret-up"></i> Live from DB</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-user-check stat-card-icon"></i>
+              <h4>Checked In</h4>
+              <div class="value" id="stat-checkedin">—</div>
+              <div class="trend-indicator up"><i class="fas fa-clock"></i> Real-time</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-user-clock stat-card-icon"></i>
+              <h4>Pending Entry</h4>
+              <div class="value" id="stat-pending">—</div>
+              <div class="trend-indicator neutral"><i class="fas fa-spinner"></i> Awaiting</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-percentage stat-card-icon"></i>
+              <h4>Attendance Rate</h4>
+              <div class="value" id="stat-rate">—</div>
+              <div class="trend-indicator up"><i class="fas fa-chart-line"></i> Calculated</div>
+            </div>
+          </div>
+
+          <div class="dashboard-split-grid">
+            <!-- Integration Suite -->
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-network-wired"></i> Integration Simulation Suite</h3>
+              <p class="text-sm text-secondary mb-3" style="line-height:1.6;">
+                Simulate registrations from external channels. All registrations are stored in the SQLite database,
+                a QR code is generated server-side, and a confirmation email receipt is written to the Email Outbox.
+              </p>
+              <div class="simulator-panel">
+                <div class="simulator-card glass">
+                  <h4><i class="fab fa-google text-info"></i> Google Forms Connector</h4>
+                  <p>Simulates an inbound Google Forms response hitting the <code>/api/registrations</code> endpoint.
+                  </p>
+                  <button class="btn btn-primary btn-sm" id="btn-sim-google">
+                    <i class="fas fa-plus"></i> Simulate Google Form Submission
+                  </button>
+                </div>
+                <div class="simulator-card glass">
+                  <h4><i class="fas fa-mobile-alt" style="color:var(--accent-purple)"></i> Mobile App Sync</h4>
+                  <p>Sends a registration payload from a simulated mobile app SDK to the REST API.</p>
+                  <button class="btn btn-primary btn-sm" id="btn-sim-mobile">
+                    <i class="fas fa-plus"></i> Simulate Mobile App SignUp
+                  </button>
+                </div>
+                <div class="simulator-card glass">
+                  <h4><i class="fas fa-code text-warning"></i> Webhook / REST API</h4>
+                  <p>Posts a JSON registration payload to <code>POST /api/registrations</code> as an external system.
+                  </p>
+                  <button class="btn btn-primary btn-sm" id="btn-sim-api">
+                    <i class="fas fa-plus"></i> Trigger Webhook / API Registration
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Activity Log -->
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-list-alt"></i> Live Activity Feed</h3>
+              <div class="activity-log-feed" id="activity-feed">
+                <div class="empty-state"><i class="fas fa-spinner fa-spin"></i> Loading...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXECUTIVE DASHBOARD -->
+        <section id="executive-dashboard" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Executive Dashboard</h1>
+              <p>High-level Event Health, KPIs, AI Insights, and Operational Alerts.</p>
+            </div>
+            <button class="btn btn-outline btn-sm" onclick="fetchExecutiveDashboard()"><i class="fas fa-sync-alt"></i>
+              Refresh</button>
+          </header>
+          <div id="executive-dashboard-container">
+            <div class="empty-state"><i class="fas fa-spinner fa-spin"></i> Loading Executive Data...</div>
+          </div>
+        </section>
+
+        <!-- EVENT INTELLIGENCE -->
+        <section id="event-intelligence" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Event Intelligence Engine</h1>
+              <p>Real-time event intelligence, agent orchestration, risk detection and actionable recommendations.</p>
+            </div>
+            <div style="display:flex; align-items:center;">
+              <span id="intelligence-last-updated" class="text-sm text-secondary"
+                style="margin-right: 1rem; font-weight: 500;">
+                <i class="fas fa-clock"></i> Last updated: Just now
+              </span>
+              <button class="btn btn-primary btn-sm" onclick="fetchEventIntelligence()"><i class="fas fa-sync-alt"></i>
+                Refresh Intelligence</button>
+            </div>
+          </header>
+
+          <!-- SECTION 5: INTELLIGENCE SUMMARY -->
+          <div id="intelligence-summary-cards" style="margin-bottom: 1.5rem;">
+            <div class="empty-state"><i class="fas fa-spinner fa-spin"></i> Loading Intelligence Summary...</div>
+          </div>
+
+          <!-- SECTION 1: AGENT ORCHESTRATION -->
+          <div class="panel-card glass" style="margin-bottom: 1.5rem">
+            <div
+              style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+              <div>
+                <h3 class="dashboard-card-title" style="margin:0;"><i class="fas fa-network-wired"></i> Agent
+                  Orchestration Pipeline</h3>
+                <p class="text-sm text-secondary" style="margin-top:0.25rem;">Existing event management agents
+                  coordinate seamlessly through the unified orchestration layer.</p>
+              </div>
+            </div>
+
+            <!-- Agent Flow Map -->
+            <div class="agent-flow-pipeline"
+              style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+              <div
+                style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 500;">
+                <span class="badge badge-primary"><i class="fas fa-user-check"></i> Registration Agent</span>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <span class="badge badge-info"><i class="fas fa-building"></i> Venue Agent</span>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <span class="badge badge-warning"><i class="fas fa-microphone"></i> Speaker Agent</span>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <span class="badge badge-success"><i class="fas fa-handshake"></i> Sponsorship Agent</span>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <span class="badge badge-danger"><i class="fas fa-exclamation-triangle"></i> Incident Agent</span>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <span class="badge badge-primary" style="background: var(--accent-gradient);"><i
+                    class="fas fa-brain"></i> Intelligence Engine</span>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <span class="badge badge-info"><i class="fas fa-chart-line"></i> Executive Dashboard</span>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <span class="badge badge-warning"><i class="fas fa-lightbulb"></i> AI Recommendations</span>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <span class="badge badge-danger"><i class="fas fa-bell"></i> Operational Alerts</span>
+              </div>
+            </div>
+
+            <!-- Orchestration Simulation Buttons -->
+            <div>
+              <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.5rem;"><i class="fas fa-vial"></i> Trigger
+                Orchestration Simulation:</div>
+              <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                <button class="btn btn-danger btn-sm"
+                  onclick="triggerOrchestrator('SPEAKER_CANCELLATION', {speaker_id:'SPK-3', session_title:'Keynote Address'})">
+                  <i class="fas fa-user-slash"></i> Simulate Speaker Cancellation
+                </button>
+                <button class="btn btn-warning btn-sm"
+                  onclick="triggerOrchestrator('WIFI_FAILURE', {hall_name:'Main Exhibition Hall'})">
+                  <i class="fas fa-wifi"></i> Simulate Wi-Fi Outage
+                </button>
+                <button class="btn btn-info btn-sm"
+                  onclick="triggerOrchestrator('SPONSOR_DELIVERABLE_DELAY', {sponsor_name:'Acme Technologies'})">
+                  <i class="fas fa-clock"></i> Simulate Sponsor Delay
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2: ORCHESTRATION RESULT CARD -->
+          <div id="orchestrator-result-card" style="margin-bottom: 1.5rem; display: none;"></div>
+
+          <!-- SECTION 3: ACTIVE AI RECOMMENDATIONS -->
+          <div class="panel-card glass" style="margin-bottom: 1.5rem;">
+            <h3 class="dashboard-card-title"><i class="fas fa-brain"></i> Active AI Recommendations</h3>
+            <p class="text-sm text-secondary mb-3">Real-time actionable insights derived from event data analysis.</p>
+            <div id="active-recommendations-container" class="stacked-card-list">
+              <div class="empty-state"><i class="fas fa-spinner fa-spin"></i> Analyzing data...</div>
+            </div>
+          </div>
+
+          <!-- SECTION 4: PREDICTIVE RISK MONITORING -->
+          <div class="panel-card glass" style="margin-bottom: 1.5rem;">
+            <h3 class="dashboard-card-title"><i class="fas fa-shield-alt"></i> Predictive Risk Monitoring</h3>
+            <p class="text-sm text-secondary mb-3">Operational risks identified across registration, venue utilization,
+              incidents, and sponsorship timelines.</p>
+            <div id="predictive-risks-container" class="stacked-card-list">
+              <div class="empty-state"><i class="fas fa-spinner fa-spin"></i> Scanning for risks...</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- END-TO-END TESTING SUITE -->
+        <section id="e2e-testing" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>End-to-End Testing Suite</h1>
+              <p>Automated verification across unit, integration, API payload, health formula, and agent orchestration
+                layers.</p>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="runE2ETests()"><i class="fas fa-play"></i> Run All
+              End-to-End Tests</button>
+          </header>
+
+          <div id="e2e-test-summary-container" style="margin-bottom: 1.5rem;"></div>
+
+          <div class="panel-card glass">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+              <h3 class="dashboard-card-title" style="margin:0;"><i class="fas fa-check-double text-success"></i>
+                Automated System Test Results</h3>
+              <span class="badge badge-info" id="e2e-test-timestamp"><i class="fas fa-clock"></i> Ready to
+                execute</span>
+            </div>
+            <div id="e2e-tests-list-container" class="stacked-card-list">
+              <div class="empty-state"><i class="fas fa-vial"></i> Click "Run All End-to-End Tests" to execute live
+                system test suite.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRODUCTION DEPLOYMENT GUIDE -->
+        <section id="deployment-guide" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Production Deployment & Environment Guide</h1>
+              <p>System deployment readiness, server status, environment variables, SQLite database telemetry, and
+                launch documentation.</p>
+            </div>
+            <button class="btn btn-outline btn-sm" onclick="loadDeploymentStatus()"><i class="fas fa-sync-alt"></i>
+              Refresh Status</button>
+          </header>
+
+          <div id="deployment-status-container" style="margin-bottom: 1.5rem;">
+            <div class="empty-state"><i class="fas fa-spinner fa-spin"></i> Loading deployment status...</div>
+          </div>
+
+          <div class="panel-card glass">
+            <h3 class="dashboard-card-title"><i class="fas fa-book"></i> Enterprise Production Deployment Guide</h3>
+            <div style="line-height:1.7; font-size:0.92rem; color:var(--text-color);">
+              <h4 style="color:var(--accent-color); margin-top:1rem;"><i class="fas fa-terminal"></i> 1. Production
+                Launch Command</h4>
+              <p style="background:rgba(0,0,0,0.3); padding:0.75rem; border-radius:6px; font-family:monospace;">
+                # Run script from project root:<br>
+                python run.py
+              </p>
+
+              <h4 style="color:var(--accent-color); margin-top:1rem;"><i class="fas fa-database"></i> 2. Automated DB
+                Table Seeding</h4>
+              <p>The system automatically detects if <code>backend/database.db</code> exists. On first launch,
+                <code>init_db()</code> creates all 6 core tables and <code>seed()</code> populates initial mock
+                registrations, sponsors, and incidents.
+              </p>
+
+              <h4 style="color:var(--accent-color); margin-top:1rem;"><i class="fas fa-shield-alt"></i> 3. Offline AI
+                Deterministic Engine</h4>
+              <p>All AI rules in <code>event_intelligence_service.py</code> and <code>agent_orchestrator.py</code> run
+                locally using zero-dependency Python logic, ensuring zero latency delays and total offline reliability
+                during live events.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 0. EVENTS -->
+        <section id="events" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Event Management</h1>
+              <p>Create events and manage all venue, speaker, session, and attendee data linked to each event.</p>
+            </div>
+          </header>
+
+          <!-- Create Event Form -->
+          <div class="panel-card glass" style="margin-bottom:1.5rem;">
+            <h3 class="dashboard-card-title"><i class="fas fa-plus-circle text-success"></i> Create New Event</h3>
+            <form id="create-event-form" class="module-form-grid" onsubmit="submitCreateEvent(event)">
+              <div class="form-group">
+                <label for="new-event-name">Event Name <span>*</span></label>
+                <input type="text" id="new-event-name" class="form-control" placeholder="Tech Summit 2026" required>
+              </div>
+              <div class="form-group">
+                <label for="new-event-type">Event Type</label>
+                <input type="text" id="new-event-type" class="form-control"
+                  placeholder="Conference / Seminar / Workshop">
+              </div>
+              <div class="form-group">
+                <label for="new-event-start">Start Date</label>
+                <input type="date" id="new-event-start" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="new-event-end">End Date</label>
+                <input type="date" id="new-event-end" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="new-event-location">Location / City</label>
+                <input type="text" id="new-event-location" class="form-control" placeholder="Bengaluru">
+              </div>
+              <div class="form-group">
+                <label for="new-event-attendees">Expected Attendees</label>
+                <input type="number" id="new-event-attendees" class="form-control" value="500">
+              </div>
+              <div class="form-group">
+                <label for="new-event-status">Status</label>
+                <select id="new-event-status" class="form-control">
+                  <option value="Draft">Draft</option>
+                  <option value="Active">Active</option>
+                  <option value="Completed">Completed</option>
+                  <option value="Cancelled">Cancelled</option>
+                </select>
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <label for="new-event-desc">Description</label>
+                <textarea id="new-event-desc" class="form-control" rows="2"
+                  placeholder="Brief description of the event"></textarea>
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-calendar-plus"></i> Create Event</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Events List -->
+          <div class="panel-card glass">
+            <h3 class="dashboard-card-title"><i class="fas fa-list-alt"></i> All Events</h3>
+            <div id="events-list" class="stacked-card-list"></div>
+          </div>
+
+          <!-- Event Details Panel -->
+          <div id="event-details-panel" class="panel-card glass" style="display:none;margin-top:1.5rem;">
+          </div>
+        </section>
+
+        <!-- 3. CHECK-IN STATION -->
+        <section id="checkin" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Check-in Tracker Station</h1>
+              <p>Validates IDs against <code>POST /api/checkins</code> and records to the <code>check_ins</code> table.
+              </p>
+            </div>
+          </header>
+
+          <div class="scanner-grid">
+            <div class="scanner-viewfinder-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-camera"></i> Live QR Code Scanner</h3>
+              <p class="text-sm text-secondary" style="margin-bottom:1rem;">Click the viewfinder to simulate scanning a
+                random pending registrant's QR badge.</p>
+              <div class="camera-scanner-view" id="camera-scanner-view">
+                <div class="scanner-laser-line"></div>
+                <div class="scanner-targets"></div>
+                <div class="scanner-viewport-overlay">
+                  <i class="fas fa-qrcode"></i>
+                  <span>Click to simulate QR scan</span>
+                </div>
+              </div>
+              <p class="text-xs text-muted" style="margin-top:.5rem;"><i class="fas fa-info-circle"></i> Calls
+                <code>POST /api/checkins</code> with <code>method: "QR"</code>
+              </p>
+            </div>
+
+            <div class="panel-card glass" style="display:flex;flex-direction:column;gap:2rem;">
+              <div>
+                <h3 class="dashboard-card-title"><i class="fas fa-keyboard"></i> Manual ID Verification</h3>
+                <p class="text-sm text-secondary" style="margin-bottom:1.25rem;">
+                  Enter a Registration ID (e.g. <code>REG-839201</code>) to log attendance manually.
+                </p>
+                <form id="scanner-manual-form">
+                  <div class="form-group" style="flex-direction:row;gap:.5rem;">
+                    <input type="text" id="scanner-id-input" class="form-control"
+                      style="flex-grow:1;font-family:monospace;" placeholder="REG-xxxxxx" required>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-barcode"></i> Verify</button>
+                  </div>
+                </form>
+              </div>
+              <div id="scanner-feedback-container" style="display:none;"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. ANALYTICS -->
+        <section id="analytics" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Attendee Analytics</h1>
+              <p>Powered by <code>GET /api/analytics/breakdown</code> — all charts reflect live database data.</p>
+            </div>
+            <button class="btn btn-outline btn-sm" id="btn-refresh-charts"><i class="fas fa-sync-alt"></i>
+              Refresh</button>
+          </header>
+
+          <div class="charts-grid">
+            <div class="chart-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-chart-pie"></i> Registrant Role Breakdown</h3>
+              <div class="chart-container-div"><canvas id="chart-roles-canvas"></canvas></div>
+            </div>
+            <div class="chart-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-chart-bar"></i> Acquisition Source Distribution</h3>
+              <div class="chart-container-div"><canvas id="chart-sources-canvas"></canvas></div>
+            </div>
+          </div>
+
+          <div class="panel-card glass" style="margin-top:1.5rem;">
+            <h3 class="dashboard-card-title"><i class="fas fa-info-circle"></i> API Data Source</h3>
+            <p class="text-sm text-secondary" style="line-height:1.6;">
+              Chart data is fetched in real-time from <code>/api/analytics/breakdown</code> which runs SQL aggregation
+              queries on the SQLite database. Adding a new registration immediately affects these charts.
+            </p>
+          </div>
+        </section>
+
+        <!-- 5. VENUE AGENT -->
+        <section id="venue-agent" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Venue Agent</h1>
+              <p>Recommend venues from the shared database using capacity, facilities, budget, cleanliness, and security
+                rules.</p>
+            </div>
+          </header>
+
+          <div class="panel-card glass">
+            <form id="venue-requirements-form" class="module-form-grid">
+              <div class="form-group">
+                <label for="venue-event-selector">Link to Event <span>*</span></label>
+                <select id="venue-event-selector" class="form-control">
+                  <option value="">Select event...</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="venue-event-name">Event Name</label>
+                <input type="text" id="venue-event-name" class="form-control" value="AI Summit Seminar">
+              </div>
+              <div class="form-group">
+                <label for="venue-event-type">Event Type</label>
+                <input type="text" id="venue-event-type" class="form-control" value="Seminar">
+              </div>
+              <div class="form-group">
+                <label for="venue-date">Event Date</label>
+                <input type="date" id="venue-date" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="venue-start-time">Start Time</label>
+                <input type="time" id="venue-start-time" class="form-control" value="09:00">
+              </div>
+              <div class="form-group">
+                <label for="venue-end-time">End Time</label>
+                <input type="time" id="venue-end-time" class="form-control" value="18:00">
+              </div>
+              <div class="form-group">
+                <label for="venue-attendees">Expected Attendees</label>
+                <input type="number" id="venue-attendees" class="form-control" value="300">
+              </div>
+              <div class="form-group">
+                <label for="venue-budget">Maximum Budget</label>
+                <input type="number" id="venue-budget" class="form-control" value="50000">
+              </div>
+              <div class="form-group">
+                <label for="venue-city">Preferred City</label>
+                <input type="text" id="venue-city" class="form-control" value="Bengaluru">
+              </div>
+              <div class="form-group">
+                <label for="venue-facilities">Required Facilities (comma separated)</label>
+                <input type="text" id="venue-facilities" class="form-control" value="Wi-Fi,Projector,Power backup">
+              </div>
+              <div class="form-group">
+                <label for="venue-cleanliness">Cleanliness Preference</label>
+                <select id="venue-cleanliness" class="form-control">
+                  <option value="High">High</option>
+                  <option value="Medium" selected>Medium</option>
+                  <option value="Low">Low</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label><input type="checkbox" id="venue-power" checked> Power backup required</label>
+              </div>
+              <div class="form-group">
+                <label><input type="checkbox" id="venue-security" checked> Security required</label>
+              </div>
+              <div class="form-group">
+                <label><input type="checkbox" id="venue-access" checked> Accessibility required</label>
+              </div>
+              <div class="form-group">
+                <label><input type="checkbox" id="venue-include-near" checked> Include near-match venues (show relaxed
+                  options)</label>
+              </div>
+              <div class="form-group" style="grid-column:1/-1;display:flex;gap:.75rem;flex-wrap:wrap;">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Recommend Best
+                  Venue</button>
+                <button type="button" class="btn btn-outline" onclick="openAddVenueModal()"><i class="fas fa-plus"></i>
+                  Add Venue Manually</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="venue-recommendation-results" class="stacked-card-list"></div>
+          <div id="venue-agent-status" class="empty-state"></div>
+        </section>
+
+        <!-- 6. VENUE OPTIMIZATION -->
+        <section id="venue-optimization" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Venue Optimization</h1>
+              <p>Allocate rooms inside the venue so each session fits its expected attendance and budget.</p>
+            </div>
+          </header>
+
+          <div class="panel-card glass">
+            <form id="optimization-form" class="module-form-grid">
+              <div class="form-group">
+                <label for="opt-event-type">Event Type</label>
+                <input type="text" id="opt-event-type" class="form-control" value="Conference">
+              </div>
+              <div class="form-group">
+                <label for="opt-total-attendees">Total Attendees</label>
+                <input type="number" id="opt-total-attendees" class="form-control" value="500">
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <label for="opt-sessions">Sessions JSON</label>
+                <textarea id="opt-sessions" class="form-control"
+                  rows="6">[{"name":"Keynote","expected_attendees":500,"session_type":"Keynote"},{"name":"AI Workshop","expected_attendees":150,"session_type":"Workshop"},{"name":"Cybersecurity Workshop","expected_attendees":100,"session_type":"Workshop"}]</textarea>
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-ruler-combined"></i> Optimize Room
+                  Allocation</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="optimization-results" class="stacked-card-list"></div>
+        </section>
+
+        <!-- 7. SPEAKER AGENT -->
+        <section id="speaker-agent" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Speaker Agent</h1>
+              <p>Match event needs to the best available speakers using expertise, experience, audience engagement, and
+                budget.</p>
+            </div>
+          </header>
+
+          <div class="panel-card glass">
+            <form id="speaker-requirements-form" class="module-form-grid">
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="speaker-session-selector">Link to Session <span>*</span></label>
+                <select id="speaker-session-selector" class="form-control">
+                  <option value="">Select an existing session to assign speaker...</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="speaker-topic">Event Topic</label>
+                <input type="text" id="speaker-topic" class="form-control" value="Generative AI">
+              </div>
+              <div class="form-group">
+                <label for="speaker-event-type">Event Type</label>
+                <input type="text" id="speaker-event-type" class="form-control" value="Seminar">
+              </div>
+              <div class="form-group">
+                <label for="speaker-audience">Audience Type</label>
+                <input type="text" id="speaker-audience" class="form-control" value="Students">
+              </div>
+              <div class="form-group">
+                <label for="speaker-date">Session Date (for availability check)</label>
+                <input type="date" id="speaker-date" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="speaker-expertise">Required Expertise (comma separated)</label>
+                <input type="text" id="speaker-expertise" class="form-control" value="AI,Machine Learning">
+              </div>
+              <div class="form-group">
+                <label for="speaker-language">Preferred Language</label>
+                <input type="text" id="speaker-language" class="form-control" value="English">
+              </div>
+              <div class="form-group">
+                <label for="speaker-budget">Budget / Honorarium Limit (₹)</label>
+                <input type="number" id="speaker-budget" class="form-control" value="20000">
+              </div>
+              <div class="form-group">
+                <label for="speaker-delivery">Delivery Mode</label>
+                <input type="text" id="speaker-delivery" class="form-control" value="Offline">
+              </div>
+              <div class="form-group" style="grid-column:1/-1;display:flex;gap:.75rem;flex-wrap:wrap;">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-magic"></i> Recommend Best
+                  Speaker</button>
+                <button type="button" class="btn btn-outline" onclick="openAddSpeakerModal()"><i
+                    class="fas fa-plus"></i> Add Speaker Manually</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="speaker-recommendation-results" class="stacked-card-list"></div>
+          <div id="speaker-agent-status" class="empty-state"></div>
+        </section>
+
+        <!-- 8. SPEAKER SCHEDULING -->
+        <section id="speaker-scheduling" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Speaker Scheduling</h1>
+              <p>Create sessions, assign speakers, and prevent overlapping commitments using database-backed conflict
+                checks.</p>
+            </div>
+          </header>
+
+          <div class="panel-card glass">
+            <form id="speaker-scheduling-form" class="module-form-grid">
+              <div class="form-group">
+                <label for="sched-event-id">Event <span>*</span></label>
+                <select id="sched-event-id" class="form-control">
+                  <option value="">Select event...</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sched-name">Session Name <span>*</span></label>
+                <input type="text" id="sched-name" class="form-control" value="Introduction to Generative AI">
+              </div>
+              <div class="form-group">
+                <label for="sched-topic">Topic</label>
+                <input type="text" id="sched-topic" class="form-control" value="Generative AI">
+              </div>
+              <div class="form-group">
+                <label for="sched-type">Session Type</label>
+                <select id="sched-type" class="form-control">
+                  <option value="Keynote">Keynote</option>
+                  <option value="Seminar" selected>Seminar</option>
+                  <option value="Workshop">Workshop</option>
+                  <option value="Panel">Panel Discussion</option>
+                  <option value="Lightning Talk">Lightning Talk</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sched-date">Date <span>*</span></label>
+                <input type="date" id="sched-date" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="sched-start">Start Time <span>*</span></label>
+                <input type="time" id="sched-start" class="form-control" value="10:00">
+              </div>
+              <div class="form-group">
+                <label for="sched-end">End Time <span>*</span></label>
+                <input type="time" id="sched-end" class="form-control" value="11:00">
+              </div>
+              <div class="form-group">
+                <label for="sched-venue">Venue <span>*</span></label>
+                <select id="sched-venue" class="form-control">
+                  <option value="">Select venue...</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sched-attendees">Expected Attendees</label>
+                <input type="number" id="sched-attendees" class="form-control" value="300">
+              </div>
+              <div class="form-group">
+                <label for="sched-speaker">Speaker (optional — auto-assigned)</label>
+                <select id="sched-speaker" class="form-control">
+                  <option value="">Select speaker...</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sched-session-id">Session ID (auto-filled after creation)</label>
+                <input type="text" id="sched-session-id" class="form-control" placeholder="Session ID will appear here"
+                  readonly>
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Create Session &amp;
+                  Assign Speaker</button>
+              </div>
+            </form>
+          </div>
+
+          <div id="scheduling-status" class="empty-state"></div>
+        </section>
+
+        <!-- 9. SESSION ANALYTICS -->
+        <section id="session-analytics" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Session Analytics</h1>
+              <p>Monitor attendance, feedback trends, and AI-generated insights for each session.</p>
+            </div>
+          </header>
+
+          <div id="session-analytics-container" class="stacked-card-list"></div>
+        </section>
+
+        <!-- 5. AI INSIGHTS -->
+        <section id="aiinsights" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>AI Insights Engine</h1>
+              <p>Fetched from <code>GET /api/insights</code> – forecasting, duplicate scanning, and recommendations.</p>
+            </div>
+            <button class="btn btn-outline btn-sm" id="btn-refresh-ai"><i class="fas fa-sync-alt"></i> Refresh</button>
+          </header>
+          <div id="ai-insights-container">
+            <div class="empty-state"><i class="fas fa-spinner fa-spin text-accent" style="font-size:2rem;"></i></div>
+          </div>
+        </section>
+
+        <!-- 6. EMAIL OUTBOX -->
+        <section id="outbox" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Email Outbox Previewer</h1>
+              <p>All confirmation emails generated since SMTP is not configured. Click any to preview in a new tab.</p>
+            </div>
+            <button class="btn btn-outline btn-sm" id="btn-refresh-outbox"><i class="fas fa-sync-alt"></i>
+              Refresh</button>
+          </header>
+
+          <div class="panel-card glass">
+            <div class="outbox-info-bar">
+              <i class="fas fa-info-circle text-info"></i>
+              <span class="text-sm text-secondary">
+                When SMTP credentials are configured in <code>backend/config.py</code>, real emails will be sent
+                instead.
+                Currently using <strong>HTML Outbox Fallback mode</strong>.
+              </span>
+            </div>
+            <div id="outbox-list" style="margin-top:1.5rem;">
+              <div class="empty-state"><i class="fas fa-spinner fa-spin"></i> Loading outbox...</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 13. SPONSORSHIP AGENT -->
+        <section id="sponsorship-agent" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Sponsorship Agent</h1>
+              <p>AI-driven sponsorship management, deliverables checklist, contract tracking, and automated sponsor Q&A.
+              </p>
+            </div>
+            <span class="portal-badge organizer-badge"><i class="fas fa-handshake"></i> Organizer Portal</span>
+          </header>
+
+          <div class="stats-grid mb-4">
+            <div class="stat-card glass">
+              <i class="fas fa-handshake stat-card-icon text-accent"></i>
+              <h4>Total Sponsors</h4>
+              <div class="value" id="spn-stat-total">3</div>
+              <div class="trend-indicator up">Platinum, Gold, Silver</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-file-contract stat-card-icon text-success"></i>
+              <h4>Signed Contracts</h4>
+              <div class="value" id="spn-stat-contracts">2</div>
+              <div class="trend-indicator up">$47,500 Total Value</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-tasks stat-card-icon text-info"></i>
+              <h4>Deliverables Met</h4>
+              <div class="value" id="spn-stat-delivs">6 / 9</div>
+              <div class="trend-indicator neutral">67% Completion</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-exclamation-triangle stat-card-icon text-warning"></i>
+              <h4>Overdue Items</h4>
+              <div class="value text-warning" id="spn-stat-overdue">2</div>
+              <div class="trend-indicator down">Action Needed</div>
+            </div>
+          </div>
+
+          <div class="dashboard-split-grid mb-4" style="grid-template-columns: 2fr 1fr;">
+            <div class="panel-card glass">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+                <h3 class="dashboard-card-title"><i class="fas fa-building text-accent"></i> Active Event Sponsors</h3>
+                <div style="display:flex; gap:0.5rem;">
+                  <button class="btn btn-secondary btn-sm" onclick="openSponsorDiscoveryModal()"><i
+                      class="fas fa-search"></i> Discover Sponsors</button>
+                  <button class="btn btn-primary btn-sm" onclick="openAddSponsorModal()"><i class="fas fa-plus"></i> Add
+                    Sponsor</button>
+                  <button class="btn btn-outline btn-sm" onclick="loadSponsorAgentData()"><i
+                      class="fas fa-sync-alt"></i> Refresh</button>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Sponsor</th>
+                      <th>Tier</th>
+                      <th>Contract Status</th>
+                      <th>Value</th>
+                      <th>Payment</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="spn-table-body">
+                    <tr>
+                      <td colspan="6" class="text-center py-3 text-secondary">Loading sponsors...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-robot text-accent"></i> AI Sponsorship Assistant</h3>
+              <p class="text-xs text-secondary mb-3">Ask queries about deliverables, contract values, engagement scores,
+                or pending items.</p>
+              <div class="form-group mb-2">
+                <textarea id="spn-ai-query-input" class="form-control" rows="3"
+                  placeholder="e.g. Which sponsors have pending deliverables?"></textarea>
+              </div>
+              <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="askSponsorshipAI()">
+                <i class="fas fa-paper-plane"></i> Ask AI Assistant
+              </button>
+              <div id="spn-ai-response-box" class="p-3 glass mt-3 text-sm"
+                style="display:none;border-radius:8px;line-height:1.5;"></div>
+            </div>
+          </div>
+
+          <div class="panel-card glass">
+            <h3 class="dashboard-card-title"><i class="fas fa-tasks text-info"></i> Master Deliverables Checklist</h3>
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Sponsor</th>
+                    <th>Deliverable Name</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Completion %</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="spn-delivs-table-body">
+                  <tr>
+                    <td colspan="6" class="text-center py-3 text-secondary">Loading deliverables...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 14. SPONSOR PERFORMANCE TRACKING -->
+        <section id="sponsor-performance" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Sponsor Performance Tracking</h1>
+              <p>Dynamic performance calculation engine, AI-powered ROI insights, engagement tracking, and deliverable
+                metrics.</p>
+            </div>
+            <span class="portal-badge organizer-badge"><i class="fas fa-chart-line"></i> Organizer Portal</span>
+          </header>
+
+          <!-- Stat Cards -->
+          <div class="stats-grid mb-4">
+            <div class="stat-card glass">
+              <i class="fas fa-handshake stat-card-icon text-accent"></i>
+              <h4>Total Sponsors</h4>
+              <div class="value" id="spn-perf-stat-count">3</div>
+              <div class="trend-indicator neutral">Active Partners</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-chart-pie stat-card-icon text-warning"></i>
+              <h4>Avg Engagement %</h4>
+              <div class="value" id="spn-perf-stat-eng">72.0%</div>
+              <div class="trend-indicator up">Weighted Engagement</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-user-plus stat-card-icon text-success"></i>
+              <h4>Total Leads Generated</h4>
+              <div class="value" id="spn-perf-stat-leads">850</div>
+              <div class="trend-indicator up">Event Lead Capture</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-tasks stat-card-icon text-info"></i>
+              <h4>Avg Deliverable Completion</h4>
+              <div class="value" id="spn-perf-stat-delivs">83.3%</div>
+              <div class="trend-indicator up">Promotional Execution</div>
+            </div>
+          </div>
+
+          <!-- Main Performance Dashboard Table (Exact 5 columns + Action) -->
+          <div class="panel-card glass mb-4">
+            <div
+              style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;flex-wrap:wrap;gap:0.5rem;">
+              <div>
+                <h3 class="dashboard-card-title"><i class="fas fa-award text-warning"></i> Sponsor Performance Dashboard
+                </h3>
+                <p class="text-xs text-secondary">Real-time dynamic category scoring (Engagement 40%, Deliverables 35%,
+                  Leads 25%)</p>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="loadSponsorPerformanceData()"><i
+                  class="fas fa-sync-alt"></i> Refresh Metrics</button>
+            </div>
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Sponsor</th>
+                    <th>Engagement</th>
+                    <th>Leads</th>
+                    <th>Deliverables</th>
+                    <th>Performance</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="spn-perf-table-body">
+                  <tr>
+                    <td colspan="6" class="text-center py-4 text-secondary"><i class="fas fa-spinner fa-spin"></i>
+                      Calculating dynamic sponsor performance...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Performance Visualizations Section -->
+          <div class="dashboard-grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem;">
+            <!-- Engagement Levels Chart Visual -->
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-fire text-danger"></i> Engagement Comparison</h3>
+              <p class="text-xs text-secondary mb-3">Overall attendee interaction & booth activity %</p>
+              <div id="spn-viz-engagement" style="display:flex;flex-direction:column;gap:0.85rem;">
+                <span class="text-xs text-secondary">Loading comparison...</span>
+              </div>
+            </div>
+
+            <!-- Leads Comparison Bar Chart Visual -->
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-users text-success"></i> Leads Acquisition Comparison
+              </h3>
+              <p class="text-xs text-secondary mb-3">Total captured leads vs 450 benchmark target</p>
+              <div id="spn-viz-leads" style="display:flex;flex-direction:column;gap:0.85rem;">
+                <span class="text-xs text-secondary">Loading lead metrics...</span>
+              </div>
+            </div>
+
+            <!-- Deliverables Progress Bar Chart Visual -->
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-check-double text-info"></i> Deliverables Execution %
+              </h3>
+              <p class="text-xs text-secondary mb-3">Percentage of promised contract deliverables met</p>
+              <div id="spn-viz-deliverables" style="display:flex;flex-direction:column;gap:0.85rem;">
+                <span class="text-xs text-secondary">Loading deliverables completion...</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 15. INCIDENT AGENT -->
+        <section id="incident-agent" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Incident Agent</h1>
+              <p>AI-driven incident detection, auto-categorization, team dispatch, and priority escalation.</p>
+            </div>
+            <span class="portal-badge organizer-badge"><i class="fas fa-user-shield"></i> Organizer Portal</span>
+          </header>
+
+          <div class="stats-grid mb-4">
+            <div class="stat-card glass">
+              <i class="fas fa-exclamation-circle stat-card-icon text-danger"></i>
+              <h4>Active Incidents</h4>
+              <div class="value" id="inc-stat-active">2</div>
+              <div class="trend-indicator down">Unresolved</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-shield-alt stat-card-icon text-warning"></i>
+              <h4>High / Critical</h4>
+              <div class="value text-warning" id="inc-stat-critical">1</div>
+              <div class="trend-indicator down">Requires Immediate Action</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-check-double stat-card-icon text-success"></i>
+              <h4>Resolved Today</h4>
+              <div class="value text-success" id="inc-stat-resolved">1</div>
+              <div class="trend-indicator up">Closed Lifecycle</div>
+            </div>
+            <div class="stat-card glass">
+              <i class="fas fa-robot stat-card-icon text-accent"></i>
+              <h4>AI Auto-Assigned</h4>
+              <div class="value" id="inc-stat-ai">100%</div>
+              <div class="trend-indicator up">Smart Classification</div>
+            </div>
+          </div>
+
+          <div class="dashboard-split-grid mb-4" style="grid-template-columns: 2fr 1fr;">
+            <div class="panel-card glass">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+                <h3 class="dashboard-card-title"><i class="fas fa-list text-accent"></i> Active Incidents Queue</h3>
+                <button class="btn btn-outline btn-sm" onclick="loadIncidentAgentData()"><i class="fas fa-sync-alt"></i>
+                  Refresh</button>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Incident Title</th>
+                      <th>Category</th>
+                      <th>Severity</th>
+                      <th>Location</th>
+                      <th>Assigned Team</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="inc-table-body">
+                    <tr>
+                      <td colspan="8" class="text-center py-3 text-secondary">Loading active incidents...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-plus-circle text-danger"></i> Log Internal Incident</h3>
+              <form id="org-log-incident-form" onsubmit="handleOrganizerIncidentSubmit(event)">
+                <div class="form-group mb-2">
+                  <label>Title <span>*</span></label>
+                  <input type="text" id="org-inc-title" class="form-control"
+                    placeholder="e.g. Stage 2 Projector Power Loss" required>
+                </div>
+                <div class="form-group mb-2">
+                  <label>Description <span>*</span></label>
+                  <textarea id="org-inc-desc" class="form-control" rows="3" placeholder="Provide operational details..."
+                    required></textarea>
+                </div>
+                <div class="form-group mb-2">
+                  <label>Location <span>*</span></label>
+                  <input type="text" id="org-inc-loc" class="form-control" placeholder="e.g. Hall A Stage 2" required>
+                </div>
+                <button type="submit" class="btn btn-danger mt-2" style="width:100%;justify-content:center;">
+                  <i class="fas fa-bolt"></i> Log & AI Auto-Classify
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- 16. INCIDENT MANAGEMENT WORKFLOWS -->
+        <section id="incident-workflows" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Incident Management Workflows</h1>
+              <p>Lifecycle state machine, response team assignment, timeline audit log, and resolution dispatch.</p>
+            </div>
+            <span class="portal-badge organizer-badge"><i class="fas fa-tasks"></i> Organizer Portal</span>
+          </header>
+
+          <div class="panel-card glass mb-4">
+            <h3 class="dashboard-card-title"><i class="fas fa-stream text-accent"></i> Active Workflow Stepper</h3>
+            <p class="text-xs text-secondary mb-3">Select an incident to view and advance its lifecycle state machine.
+            </p>
+            <div class="form-group mb-4" style="max-width:400px;">
+              <label>Select Active Incident</label>
+              <select id="wf-inc-select" class="form-control" onchange="onWorkflowIncidentSelected()">
+                <option value="">Select incident to manage...</option>
+              </select>
+            </div>
+
+            <div id="wf-stepper-box" style="display:none;">
+              <div class="workflow-stepper"
+                style="display:flex;justify-content:space-between;align-items:center;margin:2rem 0;position:relative;">
+                <div class="wf-step" id="wf-step-REPORTED" style="text-align:center;">
+                  <div class="badge badge-info p-2">1. REPORTED</div>
+                </div>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <div class="wf-step" id="wf-step-ANALYZING" style="text-align:center;">
+                  <div class="badge badge-info p-2">2. ANALYZING</div>
+                </div>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <div class="wf-step" id="wf-step-ASSIGNED" style="text-align:center;">
+                  <div class="badge badge-info p-2">3. ASSIGNED</div>
+                </div>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <div class="wf-step" id="wf-step-IN_PROGRESS" style="text-align:center;">
+                  <div class="badge badge-info p-2">4. IN PROGRESS</div>
+                </div>
+                <i class="fas fa-arrow-right text-secondary"></i>
+                <div class="wf-step" id="wf-step-RESOLVED" style="text-align:center;">
+                  <div class="badge badge-info p-2">5. RESOLVED</div>
+                </div>
+              </div>
+
+              <div class="dashboard-split-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="panel-card glass border-accent">
+                  <h4 style="font-weight:700;margin-bottom:0.5rem;" id="wf-inc-title-disp">Incident Details</h4>
+                  <p class="text-sm text-secondary" id="wf-inc-desc-disp"></p>
+                  <hr style="margin:1rem 0;border-color:rgba(255,255,255,0.1);">
+                  <div class="text-xs" style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;">
+                    <div><strong>Category:</strong> <span id="wf-inc-cat">-</span></div>
+                    <div><strong>Severity:</strong> <span id="wf-inc-sev">-</span></div>
+                    <div><strong>Location:</strong> <span id="wf-inc-loc">-</span></div>
+                    <div><strong>Assigned Team:</strong> <span id="wf-inc-team">-</span></div>
+                  </div>
+                  <div class="mt-3" style="display:flex;gap:0.5rem;">
+                    <button class="btn btn-warning btn-sm" onclick="reassignWorkflowTeam()"><i
+                        class="fas fa-user-edit"></i> Reassign Team</button>
+                    <button class="btn btn-danger btn-sm" onclick="escalateWorkflowIncident()"><i
+                        class="fas fa-arrow-up"></i> Escalate Priority</button>
+                    <button class="btn btn-success btn-sm" onclick="resolveWorkflowIncident()"><i
+                        class="fas fa-check-circle"></i> Resolve Incident</button>
+                  </div>
+                </div>
+
+                <div class="panel-card glass">
+                  <h4 style="font-weight:700;margin-bottom:0.5rem;"><i class="fas fa-history text-info"></i> Audit Trail
+                    & Timeline</h4>
+                  <div id="wf-timeline-list"
+                    style="max-height:220px;overflow-y:auto;display:flex;flex-direction:column;gap:0.5rem;">
+                    <div class="text-xs text-secondary py-2">Select an incident to view audit timeline.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 17. OPERATIONAL ALERTS -->
+        <section id="operational-alerts" class="tab-content" data-portal="organizer">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Operational Alerts</h1>
+              <p>Real-time incident dispatch notifications and AI predictive risk monitoring engine.</p>
+            </div>
+            <span class="portal-badge organizer-badge"><i class="fas fa-bell"></i> Organizer Portal</span>
+          </header>
+
+          <div class="dashboard-split-grid mb-4" style="grid-template-columns: 3fr 1fr;">
+            <div class="panel-card glass">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+                <h3 class="dashboard-card-title"><i class="fas fa-exclamation-triangle text-danger"></i> Live
+                  Operational Alert Feed</h3>
+                <div style="display:flex;gap:0.5rem;">
+                  <button class="btn btn-primary btn-sm" onclick="triggerPredictiveRiskScan()"><i
+                      class="fas fa-radar"></i> Run AI Predictive Risk Scan</button>
+                  <button class="btn btn-outline btn-sm" onclick="loadOperationalAlertsData()"><i
+                      class="fas fa-sync-alt"></i> Refresh</button>
+                </div>
+              </div>
+
+              <div id="alerts-container" style="display:flex;flex-direction:column;gap:1rem;">
+                <div class="text-center py-3 text-secondary">Loading operational alerts...</div>
+              </div>
+            </div>
+
+            <div class="panel-card glass" style="display:flex;flex-direction:column;gap:1rem;">
+              <h3 class="dashboard-card-title"><i class="fas fa-shield-alt text-info"></i> Risk Scan Stats</h3>
+              <div class="p-3 glass" style="border-radius:8px;">
+                <div class="text-xs text-secondary">Critical Alerts</div>
+                <div class="text-xl font-bold text-danger" id="alert-stat-critical">1</div>
+              </div>
+              <div class="p-3 glass" style="border-radius:8px;">
+                <div class="text-xs text-secondary">High Priority</div>
+                <div class="text-xl font-bold text-warning" id="alert-stat-high">2</div>
+              </div>
+              <div class="p-3 glass" style="border-radius:8px;">
+                <div class="text-xs text-secondary">Medium / Info</div>
+                <div class="text-xl font-bold text-info" id="alert-stat-medium">3</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- PARTICIPANT PORTAL                                                     -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <div id="participant-portal" class="portal-wrapper" style="display:none;">
+    <div class="app-container">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar participant-sidebar">
+        <div>
+          <div class="brand-container">
+            <i class="fas fa-user-graduate brand-icon participant-brand-icon"></i>
+            <div>
+              <h2 class="brand-title">Participant</h2>
+              <div class="brand-subtitle">Attendee Portal</div>
+            </div>
+          </div>
+
+          <ul class="sidebar-menu">
+            <li class="sidebar-nav-item p-active" data-ptab="p-register">
+              <i class="fas fa-user-plus"></i><span>Register</span>
+            </li>
+            <li class="sidebar-nav-item" data-ptab="p-status">
+              <i class="fas fa-id-card"></i><span>My Status</span>
+            </li>
+            <li class="sidebar-nav-item" data-ptab="p-qr">
+              <i class="fas fa-qrcode"></i><span>My QR Code</span>
+            </li>
+            <li class="sidebar-nav-item" data-ptab="p-feedback">
+              <i class="fas fa-comment-alt"></i><span>Feedback</span>
+            </li>
+            <li class="sidebar-nav-item" data-ptab="p-report-incident">
+              <i class="fas fa-exclamation-triangle"></i><span>Report Incident</span>
+            </li>
+            <li class="sidebar-nav-item" data-ptab="p-my-incidents">
+              <i class="fas fa-list-alt"></i><span>My Reported Incidents</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-footer">
+          <button class="btn-switch-role participant-switch" onclick="goToLanding()">
+            <i class="fas fa-exchange-alt"></i> Switch Role
+          </button>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content">
+
+        <!-- P1. REGISTER -->
+        <section id="p-register" class="ptab-content p-active">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Register for the Event</h1>
+              <p>Fill in your details below to receive your Registration ID and QR Code.</p>
+            </div>
+            <span class="portal-badge participant-badge"><i class="fas fa-user-graduate"></i> Participant Portal</span>
+          </header>
+
+          <div class="dashboard-split-grid" style="grid-template-columns: 3fr 2fr;">
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-clipboard-list"></i> Registration Form</h3>
+              <form id="web-registration-form">
+                <div class="form-grid">
+                  <div class="form-group" style="grid-column: 1 / -1;">
+                    <label for="reg-event-id">Event <span>*</span></label>
+                    <select id="reg-event-id" class="form-control" required>
+                      <option value="">Select event...</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="reg-name">Full Name <spaīn>*</span></label>
+                    <input type="text" id="reg-name" class="form-control" placeholder="Jane Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="reg-email">Email Address <span>*</span></label>
+                    <input type="email" id="reg-email" class="form-control" placeholder="jane@example.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="reg-phone">Phone Number <span>*</span></label>
+                    <input type="tel" id="reg-phone" class="form-control" placeholder="555-0199" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="reg-company">Institution / Company</label>
+                    <input type="text" id="reg-company" class="form-control" placeholder="ACME Corp">
+                  </div>
+                  <div class="form-group">
+                    <label for="reg-state">State / Region</label>
+                    <input type="text" id="reg-state" class="form-control" placeholder="Tamil Nadu">
+                  </div>
+                  <div class="form-group">
+                    <label for="reg-country">Country</label>
+                    <input type="text" id="reg-country" class="form-control" placeholder="India">
+                  </div>
+                  <div class="form-group">
+                    <label for="reg-interest">Area of Interest</label>
+                    <input type="text" id="reg-interest" class="form-control" placeholder="AI / Machine Learning">
+                  </div>
+                  <div class="form-group">
+                    <label for="reg-role">Your Role <span>*</span></label>
+                    <select id="reg-role" class="form-control" required>
+                      <option value="Student">Student</option>
+                      <option value="Professional" selected>Professional</option>
+                      <option value="Mentor">Mentor</option>
+                      <option value="Organizer">Organizer</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-participant-primary" style="margin-top:1.25rem;"
+                  id="reg-submit-btn">
+                  <i class="fas fa-check-circle"></i> Complete Registration
+                </button>
+              </form>
+            </div>
+
+            <div class="panel-card glass"
+              style="display:flex;flex-direction:column;gap:1.25rem;justify-content:center;">
+              <i class="fas fa-id-badge" style="font-size:3rem;color:var(--participant-accent);opacity:0.9;"></i>
+              <h3 style="font-family:'Outfit';font-weight:800;">What Happens Next?</h3>
+              <div class="info-steps">
+                <div class="info-step"><span class="step-num participant-step">1</span><span>Your details are
+                    <strong>validated</strong> instantly</span></div>
+                <div class="info-step"><span class="step-num participant-step">2</span><span>Duplicate email is
+                    <strong>checked</strong></span></div>
+                <div class="info-step"><span class="step-num participant-step">3</span><span>A unique
+                    <strong>Registration ID</strong> is generated</span></div>
+                <div class="info-step"><span class="step-num participant-step">4</span><span>A <strong>QR Code</strong>
+                    is created for you</span></div>
+                <div class="info-step"><span class="step-num participant-step">5</span><span>A <strong>confirmation
+                      email</strong> is dispatched</span></div>
+                <div class="info-step"><span class="step-num participant-step">6</span><span>Visit <strong>My
+                      Status</strong> to see your registration</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- P2. MY STATUS -->
+        <section id="p-status" class="ptab-content">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>My Registration Status</h1>
+              <p>Look up your registration using your email address or Registration ID.</p>
+            </div>
+            <span class="portal-badge participant-badge"><i class="fas fa-user-graduate"></i> Participant Portal</span>
+          </header>
+
+          <div class="dashboard-split-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-search"></i> Look Up My Registration</h3>
+              <p class="text-sm text-secondary mb-3">Enter your email or Registration ID to fetch your status.</p>
+              <form id="status-lookup-form">
+                <div class="form-group" style="margin-bottom:1rem;">
+                  <label for="status-lookup-input">Email or Registration ID</label>
+                  <input type="text" id="status-lookup-input" class="form-control"
+                    placeholder="jane@example.com or REG-123456" required>
+                </div>
+                <button type="submit" class="btn btn-participant-primary">
+                  <i class="fas fa-search"></i> Look Up Status
+                </button>
+              </form>
+            </div>
+
+            <div id="status-result-card" class="panel-card glass" style="display:none;"></div>
+          </div>
+        </section>
+
+        <!-- P3. MY QR CODE -->
+        <section id="p-qr" class="ptab-content">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>My QR Code</h1>
+              <p>Enter your Registration ID to display your QR Code for event check-in.</p>
+            </div>
+            <span class="portal-badge participant-badge"><i class="fas fa-user-graduate"></i> Participant Portal</span>
+          </header>
+
+          <div class="dashboard-split-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-qrcode"></i> Retrieve My QR Code</h3>
+              <p class="text-sm text-secondary mb-3">Enter your Registration ID to display the QR code you'll use to
+                check in on event day.</p>
+              <form id="qr-lookup-form">
+                <div class="form-group" style="margin-bottom:1rem;">
+                  <label for="qr-reg-id-input">Registration ID</label>
+                  <input type="text" id="qr-reg-id-input" class="form-control" placeholder="REG-xxxxxx" required
+                    style="font-family:monospace;">
+                </div>
+                <button type="submit" class="btn btn-participant-primary">
+                  <i class="fas fa-search"></i> Show My QR Code
+                </button>
+              </form>
+            </div>
+
+            <div id="qr-display-card" class="panel-card glass" style="display:none;text-align:center;"></div>
+          </div>
+        </section>
+
+        <!-- P4. FEEDBACK -->
+        <section id="p-feedback" class="ptab-content">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Event Feedback</h1>
+              <p>Share your experience to help us improve future events.</p>
+            </div>
+            <span class="portal-badge participant-badge"><i class="fas fa-user-graduate"></i> Participant Portal</span>
+          </header>
+
+          <div class="dashboard-split-grid" style="grid-template-columns:3fr 2fr;">
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-star"></i> Submit Your Feedback</h3>
+              <form id="feedback-form">
+                <div class="form-grid" style="margin-bottom:1rem;">
+                  <div class="form-group">
+                    <label for="fb-name">Your Name <span>*</span></label>
+                    <input type="text" id="fb-name" class="form-control" placeholder="Jane Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="fb-reg-id">Registration ID <span>*</span></label>
+                    <input type="text" id="fb-reg-id" class="form-control" placeholder="REG-xxxxxx" required
+                      style="font-family:monospace;">
+                  </div>
+                  <div class="form-group">
+                    <label for="fb-session">Session (optional)</label>
+                    <select id="fb-session" class="form-control">
+                      <option value="">General feedback (no session)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group" style="margin-bottom:1rem;">
+                  <label>Overall Rating <span>*</span></label>
+                  <div class="star-rating" id="star-rating">
+                    <i class="fas fa-star" data-val="1"></i>
+                    <i class="fas fa-star" data-val="2"></i>
+                    <i class="fas fa-star" data-val="3"></i>
+                    <i class="fas fa-star" data-val="4"></i>
+                    <i class="fas fa-star" data-val="5"></i>
+                  </div>
+                  <input type="hidden" id="fb-rating" value="0">
+                </div>
+                <div class="form-group" style="margin-bottom:1.25rem;">
+                  <label for="fb-comment">Comments / Suggestions</label>
+                  <textarea id="fb-comment" class="form-control" rows="4"
+                    placeholder="Tell us about your experience..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-participant-primary" id="fb-submit-btn">
+                  <i class="fas fa-paper-plane"></i> Submit Feedback
+                </button>
+              </form>
+            </div>
+
+            <div class="panel-card glass"
+              style="display:flex;flex-direction:column;gap:1rem;justify-content:center;align-items:center;text-align:center;">
+              <i class="fas fa-heart" style="font-size:3.5rem;color:var(--participant-accent);opacity:0.85;"></i>
+              <h3 style="font-weight:800;">Your Voice Matters!</h3>
+              <p class="text-sm text-secondary" style="line-height:1.7;">
+                Your feedback helps organizers understand what worked well and what can be improved. Every response is
+                reviewed carefully.
+              </p>
+              <div id="feedback-success" style="display:none;" class="feedback-success-msg">
+                <i class="fas fa-check-circle text-success" style="font-size:2rem;"></i>
+                <p style="margin-top:.5rem;font-weight:700;color:var(--success);">Thank you! Feedback submitted.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- P5. REPORT AN INCIDENT -->
+        <section id="p-report-incident" class="ptab-content">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>Report an Incident</h1>
+              <p>Experiencing an issue at the venue? Submit a report for event operations to review and resolve.</p>
+            </div>
+            <span class="portal-badge participant-badge"><i class="fas fa-user-graduate"></i> Participant Portal</span>
+          </header>
+
+          <div class="dashboard-split-grid" style="grid-template-columns: 3fr 2fr;">
+            <div class="panel-card glass">
+              <h3 class="dashboard-card-title"><i class="fas fa-exclamation-triangle text-danger"></i> Incident
+                Reporting Form</h3>
+              <form id="p-report-incident-form" onsubmit="handleParticipantReportSubmit(event)">
+                <div class="form-group mb-3">
+                  <label for="p-inc-type">Incident Type <span>*</span></label>
+                  <select id="p-inc-type" class="form-control" required>
+                    <option value="">Select type of issue...</option>
+                    <option value="Technical Issue">Technical Issue</option>
+                    <option value="Network/Wi-Fi Issue">Network / Wi-Fi Issue</option>
+                    <option value="Audio/Video Issue">Audio / Video Issue</option>
+                    <option value="Venue Issue">Venue Issue (A/C, Seating, Cleaning)</option>
+                    <option value="Security Issue">Security Issue</option>
+                    <option value="Medical Emergency">Medical Emergency</option>
+                    <option value="Registration Issue">Registration Issue</option>
+                    <option value="Seating Issue">Seating Issue</option>
+                    <option value="Accessibility Issue">Accessibility Issue</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="p-inc-desc">Incident Description <span>*</span></label>
+                  <textarea id="p-inc-desc" class="form-control" rows="4"
+                    placeholder="Describe the issue clearly (e.g. Wi-Fi connection dropping repeatedly in Hall B)..."
+                    required></textarea>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="p-inc-location">Location <span>*</span></label>
+                  <select id="p-inc-location" class="form-control" required>
+                    <option value="Hall A">Hall A</option>
+                    <option value="Hall B">Hall B</option>
+                    <option value="Registration Desk">Registration Desk</option>
+                    <option value="Exhibition Area">Exhibition Area</option>
+                    <option value="Food Court">Food Court</option>
+                    <option value="Parking Area">Parking Area</option>
+                    <option value="Other Location">Other Location</option>
+                  </select>
+                </div>
+                <div class="form-group mb-3">
+                  <label>Urgency Level (Input Data) <span>*</span></label>
+                  <div style="display:flex;gap:1rem;margin-top:0.3rem;">
+                    <label style="display:flex;align-items:center;gap:0.3rem;font-weight:normal;cursor:pointer;">
+                      <input type="radio" name="p-inc-urgency" value="Normal" checked> Normal
+                    </label>
+                    <label style="display:flex;align-items:center;gap:0.3rem;font-weight:normal;cursor:pointer;">
+                      <input type="radio" name="p-inc-urgency" value="Urgent"> Urgent
+                    </label>
+                    <label
+                      style="display:flex;align-items:center;gap:0.3rem;font-weight:normal;cursor:pointer;color:var(--danger,#ef4444);">
+                      <input type="radio" name="p-inc-urgency" value="Emergency"> Emergency
+                    </label>
+                  </div>
+                  <small class="text-secondary text-xs mt-1" style="display:block;">* Actual severity & priority will be
+                    independently evaluated by the AI Incident Engine.</small>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="p-inc-attachment">Optional Attachment (Image / File)</label>
+                  <input type="file" id="p-inc-attachment" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-danger" style="width:100%;justify-content:center;">
+                  <i class="fas fa-paper-plane"></i> Submit Incident
+                </button>
+              </form>
+            </div>
+
+            <div class="panel-card glass"
+              style="display:flex;flex-direction:column;gap:1rem;justify-content:center;text-align:center;">
+              <i class="fas fa-shield-alt text-info" style="font-size:3.5rem;"></i>
+              <h3 style="font-weight:800;">Real-Time Operations Dispatch</h3>
+              <p class="text-sm text-secondary" style="line-height:1.6;">
+                Once submitted, your incident is immediately evaluated by the Organizer AI Engine, assigned to the
+                responsible response team, and tracked through resolution.
+              </p>
+              <div id="p-incident-success-box" style="display:none;" class="p-3 glass border-success"
+                style="border-radius:8px;">
+                <i class="fas fa-check-circle text-success" style="font-size:2rem;"></i>
+                <p style="margin-top:0.4rem;font-weight:700;">Incident Reported Successfully!</p>
+                <div class="text-sm font-mono mt-1" id="p-inc-success-id">ID: INC-xxxx</div>
+                <div class="badge badge-warning mt-2">Status: REPORTED</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- P6. MY REPORTED INCIDENTS -->
+        <section id="p-my-incidents" class="ptab-content">
+          <header class="page-header">
+            <div class="page-title">
+              <h1>My Reported Incidents</h1>
+              <p>Track the live status of all incidents you have reported.</p>
+            </div>
+            <span class="portal-badge participant-badge"><i class="fas fa-user-graduate"></i> Participant Portal</span>
+          </header>
+
+          <div class="panel-card glass">
+            <h3 class="dashboard-card-title"><i class="fas fa-list-alt"></i> Incident History</h3>
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Incident ID</th>
+                    <th>Issue &amp; Category</th>
+                    <th>Location</th>
+                    <th>Reported Date</th>
+                    <th>Status</th>
+                    <th>Last Updated</th>
+                    <th>Resolution</th>
+                  </tr>
+                </thead>
+                <tbody id="p-my-incidents-table-body">
+                  <tr>
+                    <td colspan="6" class="text-center text-secondary py-3">Loading reported incidents...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+  <!-- MODALS (shared)                                                        -->
+  <!-- ══════════════════════════════════════════════════════════════════════ -->
+
+  <!-- REGISTRATION RECEIPT MODAL -->
+  <div class="modal-overlay" id="receipt-modal">
+    <div class="modal-card glass slide-in">
+      <div class="modal-success-icon" id="modal-success-icon"><i class="fas fa-check"></i></div>
+      <h2 style="font-family:'Outfit';font-weight:800;margin-bottom:.5rem;">Registration Confirmed!</h2>
+      <p class="text-sm text-secondary">Saved to database · QR code generated · Email dispatched to outbox</p>
+
+      <div class="receipt-ticket">
+        <div class="receipt-row"><span class="label">Registration ID</span><span class="val font-mono"
+            id="modal-reg-id">—</span></div>
+        <div class="receipt-row"><span class="label">Full Name</span><span class="val" id="modal-name">—</span></div>
+        <div class="receipt-row"><span class="label">Email</span><span class="val" id="modal-email">—</span></div>
+        <div class="receipt-row"><span class="label">Role</span><span class="val" id="modal-role">—</span></div>
+        <div class="receipt-row"><span class="label">Source</span><span class="val" id="modal-source">—</span></div>
+        <div class="receipt-row" id="modal-dup-row" style="display:none;">
+          <span class="label text-warning"><i class="fas fa-exclamation-triangle"></i> Note</span>
+          <span class="val text-warning text-sm" id="modal-dup-message">Existing registration with same email
+            found</span>
+        </div>
+      </div>
+
+      <div class="qr-code-holder" id="modal-qrcode"></div>
+
+      <div style="display:flex;gap:.75rem;margin-top:1rem;">
+        <button class="btn btn-outline" id="close-receipt-modal" style="flex:1;justify-content:center;">
+          <i class="fas fa-times"></i> Close
+        </button>
+        <button class="btn btn-primary" id="view-email-btn" style="flex:1;justify-content:center;">
+          <i class="fas fa-envelope"></i> View Email Receipt
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CONFIRM MODAL -->
+  <div class="modal-overlay" id="confirm-modal">
+    <div class="modal-card glass slide-in" style="max-width:420px;padding:2rem;border-color:rgba(220,38,38,.25);">
+      <div class="status-icon danger" style="margin:0 auto 1rem;width:48px;height:48px;font-size:1.5rem;">
+        <i class="fas fa-exclamation-triangle"></i>
+      </div>
+      <h3 style="font-family:'Outfit';font-weight:800;margin-bottom:.75rem;font-size:1.25rem;" id="confirm-modal-title">
+        Confirm</h3>
+      <p style="color:var(--text-secondary);font-size:.85rem;margin-bottom:1.5rem;line-height:1.5;text-align:center;"
+        id="confirm-modal-message">Are you sure?</p>
+      <div style="display:flex;gap:.75rem;">
+        <button class="btn btn-outline btn-sm" id="confirm-modal-cancel"
+          style="flex:1;justify-content:center;">Cancel</button>
+        <button class="btn btn-primary btn-sm" id="confirm-modal-submit"
+          style="flex:1;justify-content:center;">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD VENUE MODAL -->
+  <div class="modal-overlay" id="add-venue-modal">
+    <div class="modal-card glass slide-in" style="max-width:600px;">
+      <h2 style="font-family:'Outfit';font-weight:800;margin-bottom:1rem;">Add Venue Manually</h2>
+      <form id="add-venue-form" class="module-form-grid" onsubmit="submitAddVenue(event)" style="text-align:left;">
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="av-name">Venue Name <span>*</span></label>
+          <input type="text" id="av-name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="av-city">City <span>*</span></label>
+          <input type="text" id="av-city" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="av-state">State</label>
+          <input type="text" id="av-state" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="av-country">Country</label>
+          <input type="text" id="av-country" class="form-control" value="India">
+        </div>
+        <div class="form-group">
+          <label for="av-location">Location / Area</label>
+          <input type="text" id="av-location" class="form-control">
+        </div>
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="av-address">Full Address</label>
+          <textarea id="av-address" class="form-control" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="av-capacity">Capacity</label>
+          <input type="number" id="av-capacity" class="form-control" value="0">
+        </div>
+        <div class="form-group">
+          <label for="av-cost">Base Cost</label>
+          <input type="number" id="av-cost" class="form-control" value="0">
+        </div>
+        <div class="form-group">
+          <label for="av-venue-type">Venue Type</label>
+          <input type="text" id="av-venue-type" class="form-control" placeholder="Hall, Auditorium...">
+        </div>
+        <div class="form-group">
+          <label for="av-event-types">Supported Event Types (comma sep)</label>
+          <input type="text" id="av-event-types" class="form-control">
+        </div>
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="av-facilities">Facilities (comma sep)</label>
+          <input type="text" id="av-facilities" class="form-control" placeholder="Wi-Fi, Projector, Stage...">
+        </div>
+        <div class="form-group"><label for="av-clean">Cleanliness Rating</label><input type="number" step="0.1"
+            id="av-clean" class="form-control" value="3.0"></div>
+        <div class="form-group"><label for="av-security">Security Rating</label><input type="number" step="0.1"
+            id="av-security" class="form-control" value="3.0"></div>
+        <div class="form-group"><label for="av-rating">Overall Rating</label><input type="number" step="0.1"
+            id="av-rating" class="form-control" value="3.0"></div>
+
+        <div class="form-group" style="grid-column:1/-1;display:flex;gap:1rem;flex-wrap:wrap;font-size:0.9rem;">
+          <label><input type="checkbox" id="av-wifi"> Wi-Fi</label>
+          <label><input type="checkbox" id="av-projector"> Projector</label>
+          <label><input type="checkbox" id="av-sound"> Sound System</label>
+          <label><input type="checkbox" id="av-ac"> AC</label>
+          <label><input type="checkbox" id="av-parking"> Parking</label>
+          <label><input type="checkbox" id="av-power"> Power Backup</label>
+          <label><input type="checkbox" id="av-accessibility"> General Access</label>
+          <label><input type="checkbox" id="av-wheelchair"> Wheelchair Access</label>
+          <label><input type="checkbox" id="av-washrooms"> Washrooms</label>
+        </div>
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="av-description">Description</label>
+          <textarea id="av-description" class="form-control" rows="2"></textarea>
+        </div>
+        <div class="form-group" style="grid-column:1/-1;display:flex;gap:.75rem;">
+          <button type="button" class="btn btn-outline" style="flex:1;" onclick="closeAddVenueModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary" style="flex:1;">Add Venue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADD SPEAKER MODAL -->
+  <div class="modal-overlay" id="add-speaker-modal">
+    <div class="modal-card glass slide-in" style="max-width:600px;">
+      <h2 style="font-family:'Outfit';font-weight:800;margin-bottom:1rem;">Add Speaker Manually</h2>
+      <form id="add-speaker-form" class="module-form-grid" onsubmit="submitAddSpeaker(event)" style="text-align:left;">
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="asp-name">Speaker Name <span>*</span></label>
+          <input type="text" id="asp-name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="asp-org">Organization</label>
+          <input type="text" id="asp-org" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="asp-designation">Designation</label>
+          <input type="text" id="asp-designation" class="form-control">
+        </div>
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="asp-expertise">Expertise (comma sep) <span>*</span></label>
+          <input type="text" id="asp-expertise" class="form-control" placeholder="AI, Cloud, Security..." required>
+        </div>
+        <div class="form-group">
+          <label for="asp-experience">Years of Experience</label>
+          <input type="number" id="asp-experience" class="form-control" value="0">
+        </div>
+        <div class="form-group">
+          <label for="asp-honorarium">Honorarium (₹)</label>
+          <input type="number" id="asp-honorarium" class="form-control" value="0">
+        </div>
+        <div class="form-group">
+          <label for="asp-languages">Languages (comma sep)</label>
+          <input type="text" id="asp-languages" class="form-control" value="English">
+        </div>
+        <div class="form-group">
+          <label for="asp-rating">Rating (out of 5.0)</label>
+          <input type="number" step="0.1" id="asp-rating" class="form-control" value="4.0">
+        </div>
+        <div class="form-group">
+          <label for="asp-engagement">Engagement Score</label>
+          <input type="number" step="0.1" id="asp-engagement" class="form-control" value="4.0">
+        </div>
+        <div class="form-group">
+          <label for="asp-communication">Communication Score</label>
+          <input type="number" step="0.1" id="asp-communication" class="form-control" value="4.0">
+        </div>
+        <div class="form-group">
+          <label for="asp-event-types">Preferred Event Types (comma sep)</label>
+          <input type="text" id="asp-event-types" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="asp-audience">Preferred Audience (comma sep)</label>
+          <input type="text" id="asp-audience" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="asp-delivery">Delivery Mode</label>
+          <select id="asp-delivery" class="form-control">
+            <option value="Offline">Offline</option>
+            <option value="Online">Online</option>
+            <option value="Hybrid">Hybrid</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="asp-availability">Availability</label>
+          <input type="text" id="asp-availability" class="form-control" placeholder="Available">
+        </div>
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="asp-feedback">Previous Feedback</label>
+          <textarea id="asp-feedback" class="form-control" rows="2"></textarea>
+        </div>
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="asp-bio">Biography</label>
+          <textarea id="asp-bio" class="form-control" rows="2"></textarea>
+        </div>
+        <div class="form-group" style="grid-column:1/-1;">
+          <label for="asp-contact">Contact Info</label>
+          <input type="text" id="asp-contact" class="form-control" placeholder="Email or Phone">
+        </div>
+        <div class="form-group" style="grid-column:1/-1;display:flex;gap:.75rem;">
+          <button type="button" class="btn btn-outline" style="flex:1;" onclick="closeAddSpeakerModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary" style="flex:1;">Add Speaker</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADD SPONSOR MODAL -->
+  <div id="add-sponsor-modal" class="modal-overlay" style="display:none;z-index:9999;">
+    <div class="modal-card glass" style="max-width:500px;width:90%;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;">
+        <h2 style="margin:0;"><i class="fas fa-plus"></i> Add Sponsor</h2>
+        <button style="background:none;border:none;color:var(--text);cursor:pointer;font-size:1.2rem;"
+          onclick="document.getElementById('add-sponsor-modal').style.display='none';"><i
+            class="fas fa-times"></i></button>
+      </div>
+      <form id="add-sponsor-form" onsubmit="submitAddSponsor(event)">
+        <div class="form-group">
+          <label>Sponsor Name <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="add-spn-name" required placeholder="e.g. Acme Corp">
+        </div>
+        <div class="form-group">
+          <label>Tier</label>
+          <select class="form-control" id="add-spn-tier">
+            <option value="Platinum">Platinum</option>
+            <option value="Gold" selected>Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Bronze">Bronze</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Contract Value ($)</label>
+          <input type="number" class="form-control" id="add-spn-value" value="5000">
+        </div>
+        <div class="form-group">
+          <label>Contact Email</label>
+          <input type="email" class="form-control" id="add-spn-email" placeholder="contact@sponsor.com">
+        </div>
+        <div style="display:flex;justify-content:flex-end;gap:1.5rem;margin-top:2rem;">
+          <button type="button" class="btn btn-outline"
+            onclick="document.getElementById('add-sponsor-modal').style.display='none';">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-add-spn"><i class="fas fa-save"></i> Add
+            Sponsor</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SPONSOR DETAIL MODAL -->
+  <div id="sponsor-detail-modal" class="modal-overlay" style="display:none;">
+    <div class="modal-card glass" style="max-width:850px;width:90%;max-height:90vh;overflow-y:auto;padding:1.75rem;">
+      <div
+        style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:0.75rem;">
+        <div>
+          <h2 id="sdm-sponsor-name" style="margin:0;font-size:1.5rem;">Sponsor Details</h2>
+          <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.25rem;">
+            <span id="sdm-sponsor-tier" class="badge badge-info">Gold</span>
+            <span id="sdm-category-badge" class="badge badge-success">Excellent</span>
+          </div>
+        </div>
+        <button class="btn btn-outline btn-sm" onclick="closeSponsorDetailModal()"><i class="fas fa-times"></i>
+          Close</button>
+      </div>
+
+      <!-- Metric Cards Grid -->
+      <div class="stats-grid mb-4" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+        <div class="stat-card glass p-3 text-center">
+          <i class="fas fa-chart-line text-warning mb-1" style="font-size:1.2rem;"></i>
+          <h4 style="font-size:0.8rem;color:var(--text-secondary);">Engagement %</h4>
+          <div class="value" id="sdm-engagement-val" style="font-size:1.4rem;">92%</div>
+        </div>
+        <div class="stat-card glass p-3 text-center">
+          <i class="fas fa-user-plus text-success mb-1" style="font-size:1.2rem;"></i>
+          <h4 style="font-size:0.8rem;color:var(--text-secondary);">Leads Generated</h4>
+          <div class="value" id="sdm-leads-val" style="font-size:1.4rem;">450</div>
+        </div>
+        <div class="stat-card glass p-3 text-center">
+          <i class="fas fa-tasks text-info mb-1" style="font-size:1.2rem;"></i>
+          <h4 style="font-size:0.8rem;color:var(--text-secondary);">Deliverables Completion %</h4>
+          <div class="value" id="sdm-deliv-val" style="font-size:1.4rem;">100%</div>
+        </div>
+        <div class="stat-card glass p-3 text-center">
+          <i class="fas fa-calculator text-accent mb-1" style="font-size:1.2rem;"></i>
+          <h4 style="font-size:0.8rem;color:var(--text-secondary);">Overall Score</h4>
+          <div class="value" id="sdm-score-val" style="font-size:1.4rem;">96.8 / 100</div>
+        </div>
+      </div>
+
+      <!-- AI Performance Insight Card -->
+      <div class="panel-card glass mb-4"
+        style="background:rgba(124, 58, 237, 0.08);border:1px solid rgba(124, 58, 237, 0.25);">
+        <h3 class="dashboard-card-title text-accent mb-2"><i class="fas fa-brain"></i> AI Performance Insight &
+          Recommendation</h3>
+        <p id="sdm-ai-explanation" class="text-sm font-medium mb-3" style="line-height:1.5;"></p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;" class="mb-3">
+          <div class="p-2 glass" style="border-radius:6px;background:rgba(16, 185, 129, 0.08);">
+            <strong class="text-xs text-success" style="display:block;margin-bottom:0.25rem;"><i
+                class="fas fa-thumbs-up"></i> What is Going Well:</strong>
+            <span id="sdm-ai-well" class="text-xs text-secondary"></span>
+          </div>
+          <div class="p-2 glass" style="border-radius:6px;background:rgba(239, 68, 68, 0.08);">
+            <strong class="text-xs text-danger" style="display:block;margin-bottom:0.25rem;"><i
+                class="fas fa-exclamation-triangle"></i> Needs Improvement:</strong>
+            <span id="sdm-ai-improve" class="text-xs text-secondary"></span>
+          </div>
+        </div>
+
+        <div class="p-3 glass"
+          style="border-radius:8px;background:rgba(245, 158, 11, 0.1);border-left:4px solid var(--warning);">
+          <strong class="text-xs text-warning" style="display:block;margin-bottom:0.25rem;"><i
+              class="fas fa-lightbulb"></i> Recommended Action:</strong>
+          <span id="sdm-ai-rec" class="text-sm font-semibold"></span>
+        </div>
+      </div>
+
+      <!-- Deliverables List -->
+      <div class="panel-card glass mb-4">
+        <h3 class="dashboard-card-title mb-2"><i class="fas fa-list-check text-info"></i> Individual Deliverables
+          Checklist</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Deliverable Name</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Completion %</th>
+              </tr>
+            </thead>
+            <tbody id="sdm-deliverables-body">
+              <tr>
+                <td colspan="4" class="text-center text-secondary py-2">Loading deliverables...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Real-time Metric Editor Form -->
+      <div class="panel-card glass" style="background:rgba(255,255,255,0.03);">
+        <h3 class="dashboard-card-title mb-2"><i class="fas fa-sliders-h text-primary"></i> Real-time Performance Metric
+          Editor</h3>
+        <p class="text-xs text-secondary mb-3">Updating engagement or lead count automatically triggers dynamic score &
+          category recalculation.</p>
+        <form id="sdm-update-form" onsubmit="saveSponsorMetricUpdate(event)"
+          style="display:grid;grid-template-columns:1fr 1fr auto;gap:1rem;align-items:end;">
+          <input type="hidden" id="sdm-sponsor-id">
+          <div class="form-group mb-0">
+            <label for="sdm-edit-leads" class="text-xs">Leads Generated</label>
+            <input type="number" id="sdm-edit-leads" class="form-control" min="0" required>
+          </div>
+          <div class="form-group mb-0">
+            <label for="sdm-edit-eng" class="text-xs">Engagement Score %</label>
+            <input type="number" id="sdm-edit-eng" class="form-control" min="0" max="100" required>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-calculator"></i> Save & Recalculate</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- SPONSOR DISCOVERY MODAL -->
+  <div id="sponsor-discovery-modal" class="modal-overlay" style="display:none;z-index:9998;">
+    <div class="modal-card glass" style="max-width:900px;width:90%;max-height:90vh;overflow-y:auto;padding:1.5rem;">
+      <div
+        style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;position:sticky;top:0;background:var(--card-bg);padding-bottom:10px;z-index:10;">
+        <h2 style="margin:0;"><i class="fas fa-search text-info"></i> Discover Sponsor Prospects</h2>
+        <div style="display:flex; gap:1rem; align-items:center;">
+          <select id="discovery-domain-filter" class="form-control" style="width:200px;padding:0.25rem;"
+            onchange="loadSponsorProspects()">
+            <option value="All">All Domains</option>
+            <option value="Technology">Technology</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Finance">Finance</option>
+            <option value="Media">Media</option>
+            <option value="Retail">Retail</option>
+            <option value="Education">Education</option>
+            <option value="Logistics">Logistics</option>
+          </select>
+          <button style="background:none;border:none;color:var(--text);cursor:pointer;font-size:1.2rem;"
+            onclick="document.getElementById('sponsor-discovery-modal').style.display='none';"><i
+              class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Prospect Name</th>
+              <th>Domain</th>
+              <th>Estimated Budget</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="discovery-table-body">
+            <tr>
+              <td colspan="5" class="text-center py-3"><i class="fas fa-spinner fa-spin"></i> Loading prospects...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- OUTREACH PROPOSAL MODAL -->
+  <div id="outreach-proposal-modal" class="modal-overlay" style="display:none;z-index:9999;">
+    <div class="modal-card glass" style="max-width:550px;width:90%;padding:1.5rem;">
+      <h3 style="margin-top:0;"><i class="fas fa-envelope-open-text text-accent"></i> Approach Prospect</h3>
+      <p class="text-secondary text-sm mb-3">Send a custom sponsorship request via email.</p>
+      <form id="outreach-form" onsubmit="submitSponsorApproach(event)">
+        <input type="hidden" id="approach-prospect-id">
+        <div class="form-group">
+          <label>Prospect Name</label>
+          <input type="text" class="form-control" id="approach-prospect-name" disabled>
+        </div>
+        <div class="form-group">
+          <label>Target Amount ($)</label>
+          <input type="number" class="form-control" id="approach-amount" required>
+        </div>
+        <div class="form-group">
+          <label>Offered Tier</label>
+          <select class="form-control" id="approach-tier">
+            <option value="Title Sponsor">Title Sponsor</option>
+            <option value="Platinum">Platinum</option>
+            <option value="Gold" selected>Gold</option>
+            <option value="Silver">Silver</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Proposal Message</label>
+          <textarea class="form-control" id="approach-message" rows="4"
+            required>We warmly invite you to sponsor our upcoming event. With over 2,000 attendees in your direct target market, this is an excellent opportunity for brand exposure.</textarea>
+        </div>
+        <div style="display:flex;justify-content:flex-end;gap:1.5rem;margin-top:2rem;">
+          <button type="button" class="btn btn-outline"
+            onclick="document.getElementById('outreach-proposal-modal').style.display='none';">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="btn-approach-submit"><i class="fas fa-paper-plane"></i> Send
+            Proposal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

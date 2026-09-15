@@ -1,0 +1,10 @@
+{
+  "id": "REG-437277",
+  "to": "e.rostova@academy.ru",
+  "name": "Elena Rostova",
+  "subject": "Registration Confirmed \u2013 REG-437277 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-437277.html",
+  "sent_at": "2026-08-11T17:40:30.795007Z",
+  "delivered": false,
+  "mode": "outbox"
+}

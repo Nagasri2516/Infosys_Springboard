@@ -1,0 +1,10 @@
+{
+  "id": "REG-953231",
+  "to": "jane.doe@standard.com",
+  "name": "Jane Doe",
+  "subject": "Registration Confirmed \u2013 REG-953231 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-953231.html",
+  "sent_at": "2026-08-21T15:09:16.912673Z",
+  "delivered": false,
+  "mode": "outbox"
+}

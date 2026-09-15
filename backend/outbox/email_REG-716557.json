@@ -1,0 +1,10 @@
+{
+  "id": "REG-716557",
+  "to": "soap@project.org",
+  "name": "Tyler Durden",
+  "subject": "Registration Confirmed \u2013 REG-716557 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-716557.html",
+  "sent_at": "2026-07-31T16:07:43.227213Z",
+  "delivered": false,
+  "mode": "outbox"
+}

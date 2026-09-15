@@ -1,0 +1,10 @@
+{
+  "id": "REG-544492",
+  "to": "sjenkins@techcorp.com",
+  "name": "Dr. Sarah Jenkins",
+  "subject": "Registration Confirmed \u2013 REG-544492 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-544492.html",
+  "sent_at": "2026-08-21T15:08:49.106271Z",
+  "delivered": false,
+  "mode": "outbox"
+}

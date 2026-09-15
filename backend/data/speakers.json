@@ -1,0 +1,3855 @@
+[
+    {
+        "id": "SP-1001",
+        "name": "Dr. Ananya Rao",
+        "organization": "NVIDIA AI Labs",
+        "designation": "Principal Scientist",
+        "expertise": [
+            "AI",
+            "Machine Learning",
+            "Data Science",
+            "Generative AI"
+        ],
+        "years_of_experience": 12,
+        "biography": "Leading researcher in applied AI for enterprise innovation.",
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "availability": "Available",
+        "previous_engagements": 18,
+        "previous_topics": [
+            "Generative AI",
+            "Responsible AI"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 4.7,
+        "communication_score": 4.9,
+        "previous_feedback": "Excellent delivery and audience engagement.",
+        "certifications": [
+            "Google ML Engineer"
+        ],
+        "achievements": [
+            "Published research",
+            "Industry keynote"
+        ],
+        "honorarium": 18000,
+        "preferred_event_types": [
+            "Seminar",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "ananya@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1004",
+        "name": "Arjun Desai",
+        "organization": "OpenAI Research",
+        "designation": "Research Engineer",
+        "expertise": [
+            "Generative AI",
+            "NLP",
+            "Machine Learning",
+            "AI"
+        ],
+        "years_of_experience": 8,
+        "biography": "Core contributor to modern LLM research and deployment.",
+        "languages": [
+            "English"
+        ],
+        "availability": "Available",
+        "previous_engagements": 25,
+        "previous_topics": [
+            "Generative AI",
+            "Prompt Engineering",
+            "Future of NLP"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.8,
+        "previous_feedback": "Fantastic insights into LLM internals.",
+        "certifications": [
+            "AWS ML Specialty"
+        ],
+        "achievements": [
+            "Multiple AI patents"
+        ],
+        "honorarium": 19500,
+        "preferred_event_types": [
+            "Seminar",
+            "Keynote",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Developers"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "arjun@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1002",
+        "name": "Prof. Vikram Sethi",
+        "organization": "IIT Delhi",
+        "designation": "Professor of Computer Science",
+        "expertise": [
+            "Cybersecurity",
+            "Cloud",
+            "AI"
+        ],
+        "years_of_experience": 15,
+        "biography": "Experienced professor with strong industry alignment.",
+        "languages": [
+            "English",
+            "Tamil"
+        ],
+        "availability": "Available",
+        "previous_engagements": 22,
+        "previous_topics": [
+            "Cybersecurity",
+            "Cloud Strategy"
+        ],
+        "ratings": 4.6,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.7,
+        "previous_feedback": "Highly engaging, practical examples.",
+        "certifications": [
+            "CISSP"
+        ],
+        "achievements": [
+            "Research grants",
+            "Conference chair"
+        ],
+        "honorarium": 22000,
+        "preferred_event_types": [
+            "Seminar",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "vikram@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1005",
+        "name": "Sneha Patil",
+        "organization": "CloudSecure",
+        "designation": "Cybersecurity Lead",
+        "expertise": [
+            "Cybersecurity",
+            "Network Security",
+            "Cloud"
+        ],
+        "years_of_experience": 10,
+        "biography": "Expert in modern web security and threat mitigation.",
+        "languages": [
+            "English",
+            "Marathi",
+            "Hindi"
+        ],
+        "availability": "Available",
+        "previous_engagements": 12,
+        "previous_topics": [
+            "Zero Trust",
+            "Cloud Security"
+        ],
+        "ratings": 4.7,
+        "audience_engagement_score": 4.6,
+        "communication_score": 4.8,
+        "previous_feedback": "Very clear and actionable advice.",
+        "certifications": [
+            "CEH",
+            "CISSP"
+        ],
+        "achievements": [
+            "Defcon Speaker"
+        ],
+        "honorarium": 15000,
+        "preferred_event_types": [
+            "Workshop",
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Developers",
+            "IT Admins",
+            "Students"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "sneha@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1003",
+        "name": "Ms. Priya Mehta",
+        "organization": "Mindful Systems",
+        "designation": "Product Strategist",
+        "expertise": [
+            "Product Design",
+            "Leadership"
+        ],
+        "years_of_experience": 9,
+        "biography": "Known for high audience engagement and leadership workshops.",
+        "languages": [
+            "English"
+        ],
+        "availability": "Unavailable",
+        "previous_engagements": 10,
+        "previous_topics": [
+            "Leadership",
+            "Innovation"
+        ],
+        "ratings": 4.5,
+        "audience_engagement_score": 4.8,
+        "communication_score": 4.8,
+        "previous_feedback": "Excellent audience interaction.",
+        "certifications": [
+            "Design Thinking"
+        ],
+        "achievements": [
+            "Leadership award"
+        ],
+        "honorarium": 16000,
+        "preferred_event_types": [
+            "Workshop",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "priya@example.com",
+        "status": "Unavailable"
+    },
+    {
+        "id": "SP-1006",
+        "name": "Speaker 1006",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "DevOps",
+            "NLP",
+            "Network Security",
+            "Machine Learning",
+            "Blockchain"
+        ],
+        "years_of_experience": 12,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Telugu"
+        ],
+        "availability": "Available",
+        "previous_engagements": 11,
+        "previous_topics": [
+            "Building Scalable Systems",
+            "Future of Tech",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.1,
+        "audience_engagement_score": 4.1,
+        "communication_score": 3.7,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 10000,
+        "preferred_event_types": [
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1006@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1007",
+        "name": "Speaker 1007",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "NLP",
+            "IoT",
+            "DevOps",
+            "Cloud"
+        ],
+        "years_of_experience": 25,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Telugu",
+            "Marathi",
+            "Kannada"
+        ],
+        "availability": "Available",
+        "previous_engagements": 43,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 3.9,
+        "audience_engagement_score": 5.0,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 5000,
+        "preferred_event_types": [
+            "Expo",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1007@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1008",
+        "name": "Speaker 1008",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "DevOps",
+            "Blockchain"
+        ],
+        "years_of_experience": 24,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Tamil",
+            "English"
+        ],
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.1,
+        "communication_score": 4.6,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 15000,
+        "preferred_event_types": [
+            "Seminar",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1008@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1009",
+        "name": "Speaker 1009",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Innovation",
+            "Cloud",
+            "Data Science",
+            "IoT"
+        ],
+        "years_of_experience": 14,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Kannada",
+            "Telugu"
+        ],
+        "availability": "Unavailable",
+        "previous_engagements": 13,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.8,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 50000,
+        "preferred_event_types": [
+            "Workshop",
+            "Seminar",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1009@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1010",
+        "name": "Speaker 1010",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "AI",
+            "Network Security"
+        ],
+        "years_of_experience": 24,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Marathi",
+            "Tamil",
+            "English"
+        ],
+        "availability": "Available",
+        "previous_engagements": 44,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 3.8,
+        "audience_engagement_score": 4.1,
+        "communication_score": 3.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 15000,
+        "preferred_event_types": [
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1010@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1011",
+        "name": "Speaker 1011",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Blockchain",
+            "NLP"
+        ],
+        "years_of_experience": 20,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "English"
+        ],
+        "availability": "Available",
+        "previous_engagements": 50,
+        "previous_topics": [
+            "Leadership in Crisis"
+        ],
+        "ratings": 3.8,
+        "audience_engagement_score": 4.2,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 0,
+        "preferred_event_types": [
+            "Seminar",
+            "Panel",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1011@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1012",
+        "name": "Speaker 1012",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "NLP",
+            "Leadership",
+            "Network Security",
+            "Product Design"
+        ],
+        "years_of_experience": 5,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Hindi",
+            "Kannada"
+        ],
+        "availability": "Available",
+        "previous_engagements": 31,
+        "previous_topics": [
+            "Future of Tech",
+            "Leadership in Crisis",
+            "AI in Business"
+        ],
+        "ratings": 3.9,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 10000,
+        "preferred_event_types": [
+            "Expo",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1012@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1013",
+        "name": "Speaker 1013",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Data Science",
+            "Innovation",
+            "DevOps",
+            "AI"
+        ],
+        "years_of_experience": 19,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Kannada",
+            "Telugu"
+        ],
+        "availability": "Available",
+        "previous_engagements": 24,
+        "previous_topics": [
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.5,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.2,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 5000,
+        "preferred_event_types": [
+            "Expo",
+            "Conference",
+            "Keynote",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1013@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1014",
+        "name": "Speaker 1014",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Product Design",
+            "Network Security",
+            "Leadership",
+            "DevOps"
+        ],
+        "years_of_experience": 20,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Kannada",
+            "Tamil"
+        ],
+        "availability": "Available",
+        "previous_engagements": 37,
+        "previous_topics": [
+            "Security at Scale",
+            "Future of Tech",
+            "AI in Business"
+        ],
+        "ratings": 4.5,
+        "audience_engagement_score": 3.8,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 20000,
+        "preferred_event_types": [
+            "Panel",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1014@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1015",
+        "name": "Speaker 1015",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Generative AI",
+            "DevOps",
+            "Leadership"
+        ],
+        "years_of_experience": 11,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Hindi"
+        ],
+        "availability": "Available",
+        "previous_engagements": 26,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.4,
+        "audience_engagement_score": 4.1,
+        "communication_score": 4.4,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 15000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1015@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1016",
+        "name": "Speaker 1016",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Machine Learning",
+            "Innovation"
+        ],
+        "years_of_experience": 11,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "English",
+            "Hindi",
+            "Marathi"
+        ],
+        "availability": "Available",
+        "previous_engagements": 0,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems",
+            "Security at Scale"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.8,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 0,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1016@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1017",
+        "name": "Speaker 1017",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Data Science",
+            "Cybersecurity",
+            "Network Security",
+            "Product Design"
+        ],
+        "years_of_experience": 18,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Hindi",
+            "Tamil"
+        ],
+        "availability": "Available",
+        "previous_engagements": 38,
+        "previous_topics": [
+            "Future of Tech",
+            "AI in Business",
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.4,
+        "audience_engagement_score": 4.8,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 50000,
+        "preferred_event_types": [
+            "Expo"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1017@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1018",
+        "name": "Speaker 1018",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Cybersecurity",
+            "Generative AI",
+            "Network Security",
+            "Blockchain",
+            "NLP"
+        ],
+        "years_of_experience": 20,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Kannada",
+            "Telugu"
+        ],
+        "availability": "Available",
+        "previous_engagements": 33,
+        "previous_topics": [
+            "Future of Tech"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.8,
+        "communication_score": 4.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 10000,
+        "preferred_event_types": [
+            "Expo",
+            "Keynote",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1018@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1019",
+        "name": "Speaker 1019",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Machine Learning",
+            "NLP"
+        ],
+        "years_of_experience": 20,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Marathi"
+        ],
+        "availability": "Available",
+        "previous_engagements": 3,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.7,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 30000,
+        "preferred_event_types": [
+            "Networking",
+            "Keynote",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1019@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1020",
+        "name": "Speaker 1020",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Product Design",
+            "NLP",
+            "Blockchain",
+            "Cybersecurity"
+        ],
+        "years_of_experience": 5,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Tamil",
+            "Hindi",
+            "Marathi"
+        ],
+        "availability": "Available",
+        "previous_engagements": 1,
+        "previous_topics": [
+            "AI in Business",
+            "Security at Scale",
+            "Future of Tech"
+        ],
+        "ratings": 3.5,
+        "audience_engagement_score": 4.8,
+        "communication_score": 4.3,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 20000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1020@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1021",
+        "name": "Speaker 1021",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Blockchain",
+            "Leadership",
+            "Cybersecurity"
+        ],
+        "years_of_experience": 17,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Kannada"
+        ],
+        "availability": "Unavailable",
+        "previous_engagements": 6,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 3.8,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 10000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1021@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1022",
+        "name": "Speaker 1022",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Innovation",
+            "Network Security",
+            "Cybersecurity"
+        ],
+        "years_of_experience": 8,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Hindi",
+            "Marathi",
+            "Kannada"
+        ],
+        "availability": "Available",
+        "previous_engagements": 23,
+        "previous_topics": [
+            "Security at Scale",
+            "AI in Business"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.4,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 10000,
+        "preferred_event_types": [
+            "Workshop",
+            "Networking",
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1022@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1023",
+        "name": "Speaker 1023",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "NLP",
+            "AI"
+        ],
+        "years_of_experience": 3,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Hindi",
+            "Marathi",
+            "Kannada"
+        ],
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "Future of Tech",
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.4,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 50000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1023@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1024",
+        "name": "Speaker 1024",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Machine Learning",
+            "NLP"
+        ],
+        "years_of_experience": 21,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Telugu",
+            "Kannada"
+        ],
+        "availability": "Available",
+        "previous_engagements": 11,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 3.8,
+        "audience_engagement_score": 3.6,
+        "communication_score": 4.6,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 0,
+        "preferred_event_types": [
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1024@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-1025",
+        "name": "Speaker 1025",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": [
+            "Generative AI",
+            "NLP"
+        ],
+        "years_of_experience": 24,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": [
+            "Hindi",
+            "Tamil"
+        ],
+        "availability": "Available",
+        "previous_engagements": 25,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 50000,
+        "preferred_event_types": [
+            "Expo",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1025@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2000",
+        "name": "Jamie Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Engineering, Cloud",
+        "years_of_experience": 8,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.1,
+        "audience_engagement_score": 4.2,
+        "communication_score": 4.6,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 23000,
+        "preferred_event_types": [
+            "Seminar",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1008@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2001",
+        "name": "Casey Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Design, Cloud",
+        "years_of_experience": 7,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 26,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 3.5,
+        "communication_score": 4.4,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 41000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1015@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2002",
+        "name": "Morgan Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Security, Data Science",
+        "years_of_experience": 5,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.2,
+        "audience_engagement_score": 4.0,
+        "communication_score": 4.6,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 16000,
+        "preferred_event_types": [
+            "Seminar",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1008@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2003",
+        "name": "Sam Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Design, Product",
+        "years_of_experience": 17,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 3,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.2,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 32000,
+        "preferred_event_types": [
+            "Networking",
+            "Keynote",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1019@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2004",
+        "name": "Sam Miller",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Security, Design",
+        "years_of_experience": 22,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 3,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 3.8,
+        "audience_engagement_score": 3.9,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 1000,
+        "preferred_event_types": [
+            "Networking",
+            "Keynote",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1019@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2005",
+        "name": "Taylor Williams",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Marketing, AI",
+        "years_of_experience": 16,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 24,
+        "previous_topics": [
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 3.6,
+        "communication_score": 4.2,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 35000,
+        "preferred_event_types": [
+            "Expo",
+            "Conference",
+            "Keynote",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1013@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2006",
+        "name": "Alex Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Marketing, AI",
+        "years_of_experience": 23,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 43,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.0,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 0,
+        "preferred_event_types": [
+            "Expo",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1007@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2007",
+        "name": "Taylor Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Design, Design",
+        "years_of_experience": 20,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 11,
+        "previous_topics": [
+            "Building Scalable Systems",
+            "Future of Tech",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.6,
+        "audience_engagement_score": 3.8,
+        "communication_score": 3.7,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 18000,
+        "preferred_event_types": [
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1006@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2008",
+        "name": "Riley Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Engineering, Data Science",
+        "years_of_experience": 22,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 31,
+        "previous_topics": [
+            "Future of Tech",
+            "Leadership in Crisis",
+            "AI in Business"
+        ],
+        "ratings": 5.0,
+        "audience_engagement_score": 4.4,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 12000,
+        "preferred_event_types": [
+            "Expo",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1012@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2009",
+        "name": "Sam Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Machine Learning, Product",
+        "years_of_experience": 19,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 44,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.5,
+        "audience_engagement_score": 4.6,
+        "communication_score": 3.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 17000,
+        "preferred_event_types": [
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1010@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2010",
+        "name": "Sam Garcia",
+        "organization": "OpenAI Research",
+        "designation": "Research Engineer",
+        "expertise": "Design, Security",
+        "years_of_experience": 20,
+        "biography": "Core contributor to modern LLM research and deployment.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 25,
+        "previous_topics": [
+            "Generative AI",
+            "Prompt Engineering",
+            "Future of NLP"
+        ],
+        "ratings": 4.6,
+        "audience_engagement_score": 3.6,
+        "communication_score": 4.8,
+        "previous_feedback": "Fantastic insights into LLM internals.",
+        "certifications": [
+            "AWS ML Specialty"
+        ],
+        "achievements": [
+            "Multiple AI patents"
+        ],
+        "honorarium": 20000,
+        "preferred_event_types": [
+            "Seminar",
+            "Keynote",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Developers"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "arjun@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2011",
+        "name": "Casey Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Marketing",
+        "years_of_experience": 21,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 31,
+        "previous_topics": [
+            "Future of Tech",
+            "Leadership in Crisis",
+            "AI in Business"
+        ],
+        "ratings": 4.0,
+        "audience_engagement_score": 4.1,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 20000,
+        "preferred_event_types": [
+            "Expo",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1012@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2012",
+        "name": "Casey Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Engineering",
+        "years_of_experience": 3,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 25,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.7,
+        "audience_engagement_score": 4.0,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 45000,
+        "preferred_event_types": [
+            "Expo",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1025@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2013",
+        "name": "Jamie Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Security",
+        "years_of_experience": 8,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 3,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 4.2,
+        "audience_engagement_score": 4.3,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 30000,
+        "preferred_event_types": [
+            "Networking",
+            "Keynote",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1019@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2014",
+        "name": "Casey Smith",
+        "organization": "Mindful Systems",
+        "designation": "Product Strategist",
+        "expertise": "AI, Security",
+        "years_of_experience": 10,
+        "biography": "Known for high audience engagement and leadership workshops.",
+        "languages": "English, Spanish",
+        "availability": "Unavailable",
+        "previous_engagements": 10,
+        "previous_topics": [
+            "Leadership",
+            "Innovation"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.8,
+        "previous_feedback": "Excellent audience interaction.",
+        "certifications": [
+            "Design Thinking"
+        ],
+        "achievements": [
+            "Leadership award"
+        ],
+        "honorarium": 7000,
+        "preferred_event_types": [
+            "Workshop",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "priya@example.com",
+        "status": "Unavailable"
+    },
+    {
+        "id": "SP-2015",
+        "name": "Morgan Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Security, Machine Learning",
+        "years_of_experience": 22,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 1,
+        "previous_topics": [
+            "AI in Business",
+            "Security at Scale",
+            "Future of Tech"
+        ],
+        "ratings": 3.5,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.3,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 12000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1020@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2016",
+        "name": "Jordan Garcia",
+        "organization": "NVIDIA AI Labs",
+        "designation": "Principal Scientist",
+        "expertise": "Leadership, Design",
+        "years_of_experience": 21,
+        "biography": "Leading researcher in applied AI for enterprise innovation.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 18,
+        "previous_topics": [
+            "Generative AI",
+            "Responsible AI"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.6,
+        "communication_score": 4.9,
+        "previous_feedback": "Excellent delivery and audience engagement.",
+        "certifications": [
+            "Google ML Engineer"
+        ],
+        "achievements": [
+            "Published research",
+            "Industry keynote"
+        ],
+        "honorarium": 3000,
+        "preferred_event_types": [
+            "Seminar",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "ananya@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2017",
+        "name": "Morgan Miller",
+        "organization": "Mindful Systems",
+        "designation": "Product Strategist",
+        "expertise": "AI, AI",
+        "years_of_experience": 3,
+        "biography": "Known for high audience engagement and leadership workshops.",
+        "languages": "English, German",
+        "availability": "Unavailable",
+        "previous_engagements": 10,
+        "previous_topics": [
+            "Leadership",
+            "Innovation"
+        ],
+        "ratings": 5.0,
+        "audience_engagement_score": 4.3,
+        "communication_score": 4.8,
+        "previous_feedback": "Excellent audience interaction.",
+        "certifications": [
+            "Design Thinking"
+        ],
+        "achievements": [
+            "Leadership award"
+        ],
+        "honorarium": 45000,
+        "preferred_event_types": [
+            "Workshop",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "priya@example.com",
+        "status": "Unavailable"
+    },
+    {
+        "id": "SP-2018",
+        "name": "Alex Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Product",
+        "years_of_experience": 21,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "Future of Tech",
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 5.0,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 7000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1023@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2019",
+        "name": "Jamie Garcia",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Leadership, Machine Learning",
+        "years_of_experience": 22,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 25,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 20000,
+        "preferred_event_types": [
+            "Expo",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1025@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2020",
+        "name": "Morgan Smith",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Machine Learning",
+        "years_of_experience": 13,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 3,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 4.2,
+        "audience_engagement_score": 4.5,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 39000,
+        "preferred_event_types": [
+            "Networking",
+            "Keynote",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1019@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2021",
+        "name": "Taylor Johnson",
+        "organization": "NVIDIA AI Labs",
+        "designation": "Principal Scientist",
+        "expertise": "Engineering, Security",
+        "years_of_experience": 25,
+        "biography": "Leading researcher in applied AI for enterprise innovation.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 18,
+        "previous_topics": [
+            "Generative AI",
+            "Responsible AI"
+        ],
+        "ratings": 4.7,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.9,
+        "previous_feedback": "Excellent delivery and audience engagement.",
+        "certifications": [
+            "Google ML Engineer"
+        ],
+        "achievements": [
+            "Published research",
+            "Industry keynote"
+        ],
+        "honorarium": 45000,
+        "preferred_event_types": [
+            "Seminar",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "ananya@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2022",
+        "name": "Sam Smith",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Machine Learning",
+        "years_of_experience": 22,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 43,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.2,
+        "audience_engagement_score": 3.6,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 25000,
+        "preferred_event_types": [
+            "Expo",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1007@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2023",
+        "name": "Jamie Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Machine Learning, Marketing",
+        "years_of_experience": 8,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.6,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.6,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 35000,
+        "preferred_event_types": [
+            "Seminar",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1008@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2024",
+        "name": "Taylor Smith",
+        "organization": "IIT Delhi",
+        "designation": "Professor of Computer Science",
+        "expertise": "AI, Data Science",
+        "years_of_experience": 25,
+        "biography": "Experienced professor with strong industry alignment.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 22,
+        "previous_topics": [
+            "Cybersecurity",
+            "Cloud Strategy"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 3.6,
+        "communication_score": 4.7,
+        "previous_feedback": "Highly engaging, practical examples.",
+        "certifications": [
+            "CISSP"
+        ],
+        "achievements": [
+            "Research grants",
+            "Conference chair"
+        ],
+        "honorarium": 38000,
+        "preferred_event_types": [
+            "Seminar",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "vikram@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2025",
+        "name": "Casey Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Machine Learning, Marketing",
+        "years_of_experience": 15,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 3,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 4.6,
+        "audience_engagement_score": 3.5,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 0,
+        "preferred_event_types": [
+            "Networking",
+            "Keynote",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1019@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2026",
+        "name": "Casey Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "AI, Product",
+        "years_of_experience": 7,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 1,
+        "previous_topics": [
+            "AI in Business",
+            "Security at Scale",
+            "Future of Tech"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 3.8,
+        "communication_score": 4.3,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 18000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1020@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2027",
+        "name": "Morgan Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Engineering",
+        "years_of_experience": 25,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 44,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 3.6,
+        "communication_score": 3.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 49000,
+        "preferred_event_types": [
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1010@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2028",
+        "name": "Jamie Smith",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Design",
+        "years_of_experience": 15,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "Future of Tech",
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 9000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1023@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2029",
+        "name": "Riley Miller",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Marketing, Marketing",
+        "years_of_experience": 12,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 37,
+        "previous_topics": [
+            "Security at Scale",
+            "Future of Tech",
+            "AI in Business"
+        ],
+        "ratings": 3.7,
+        "audience_engagement_score": 4.0,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 2000,
+        "preferred_event_types": [
+            "Panel",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1014@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2030",
+        "name": "Alex Jones",
+        "organization": "Mindful Systems",
+        "designation": "Product Strategist",
+        "expertise": "Product, Cloud",
+        "years_of_experience": 15,
+        "biography": "Known for high audience engagement and leadership workshops.",
+        "languages": "English, Spanish",
+        "availability": "Unavailable",
+        "previous_engagements": 10,
+        "previous_topics": [
+            "Leadership",
+            "Innovation"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.7,
+        "communication_score": 4.8,
+        "previous_feedback": "Excellent audience interaction.",
+        "certifications": [
+            "Design Thinking"
+        ],
+        "achievements": [
+            "Leadership award"
+        ],
+        "honorarium": 47000,
+        "preferred_event_types": [
+            "Workshop",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "priya@example.com",
+        "status": "Unavailable"
+    },
+    {
+        "id": "SP-2031",
+        "name": "Morgan Williams",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "AI, Product",
+        "years_of_experience": 15,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "Future of Tech",
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 3.8,
+        "audience_engagement_score": 3.7,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 34000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1023@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2032",
+        "name": "Morgan Smith",
+        "organization": "Mindful Systems",
+        "designation": "Product Strategist",
+        "expertise": "Design, AI",
+        "years_of_experience": 4,
+        "biography": "Known for high audience engagement and leadership workshops.",
+        "languages": "English, French",
+        "availability": "Unavailable",
+        "previous_engagements": 10,
+        "previous_topics": [
+            "Leadership",
+            "Innovation"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.3,
+        "communication_score": 4.8,
+        "previous_feedback": "Excellent audience interaction.",
+        "certifications": [
+            "Design Thinking"
+        ],
+        "achievements": [
+            "Leadership award"
+        ],
+        "honorarium": 41000,
+        "preferred_event_types": [
+            "Workshop",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "priya@example.com",
+        "status": "Unavailable"
+    },
+    {
+        "id": "SP-2033",
+        "name": "Sam Williams",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Design, Machine Learning",
+        "years_of_experience": 2,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 44,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 3.8,
+        "audience_engagement_score": 4.4,
+        "communication_score": 3.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 12000,
+        "preferred_event_types": [
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1010@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2034",
+        "name": "Sam Johnson",
+        "organization": "Mindful Systems",
+        "designation": "Product Strategist",
+        "expertise": "Product, Design",
+        "years_of_experience": 20,
+        "biography": "Known for high audience engagement and leadership workshops.",
+        "languages": "English, Spanish",
+        "availability": "Unavailable",
+        "previous_engagements": 10,
+        "previous_topics": [
+            "Leadership",
+            "Innovation"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 3.7,
+        "communication_score": 4.8,
+        "previous_feedback": "Excellent audience interaction.",
+        "certifications": [
+            "Design Thinking"
+        ],
+        "achievements": [
+            "Leadership award"
+        ],
+        "honorarium": 23000,
+        "preferred_event_types": [
+            "Workshop",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "priya@example.com",
+        "status": "Unavailable"
+    },
+    {
+        "id": "SP-2035",
+        "name": "Taylor Brown",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Machine Learning, Marketing",
+        "years_of_experience": 12,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 37,
+        "previous_topics": [
+            "Security at Scale",
+            "Future of Tech",
+            "AI in Business"
+        ],
+        "ratings": 3.9,
+        "audience_engagement_score": 4.6,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 10000,
+        "preferred_event_types": [
+            "Panel",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1014@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2036",
+        "name": "Jordan Brown",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Security, Leadership",
+        "years_of_experience": 16,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Unavailable",
+        "previous_engagements": 13,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems"
+        ],
+        "ratings": 3.6,
+        "audience_engagement_score": 4.3,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 40000,
+        "preferred_event_types": [
+            "Workshop",
+            "Seminar",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1009@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2037",
+        "name": "Taylor Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Security, Engineering",
+        "years_of_experience": 25,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "Future of Tech",
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.0,
+        "audience_engagement_score": 4.6,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 30000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1023@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2038",
+        "name": "Morgan Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Marketing, Cloud",
+        "years_of_experience": 5,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Unavailable",
+        "previous_engagements": 6,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 3.7,
+        "audience_engagement_score": 3.5,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 16000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1021@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2039",
+        "name": "Casey Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Leadership, Engineering",
+        "years_of_experience": 21,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 26,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 3.9,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.4,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 25000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1015@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2040",
+        "name": "Casey Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Engineering",
+        "years_of_experience": 5,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 44,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.6,
+        "audience_engagement_score": 4.9,
+        "communication_score": 3.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 20000,
+        "preferred_event_types": [
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1010@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2041",
+        "name": "Taylor Miller",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Product",
+        "years_of_experience": 13,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 11,
+        "previous_topics": [
+            "Building Scalable Systems",
+            "Future of Tech",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.4,
+        "audience_engagement_score": 4.2,
+        "communication_score": 3.7,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 41000,
+        "preferred_event_types": [
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1006@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2042",
+        "name": "Morgan Brown",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "AI, Machine Learning",
+        "years_of_experience": 25,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Unavailable",
+        "previous_engagements": 13,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.6,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 3000,
+        "preferred_event_types": [
+            "Workshop",
+            "Seminar",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1009@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2043",
+        "name": "Alex Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Design",
+        "years_of_experience": 16,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "Future of Tech",
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 3.7,
+        "audience_engagement_score": 4.3,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 19000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1023@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2044",
+        "name": "Alex Garcia",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Security",
+        "years_of_experience": 11,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Unavailable",
+        "previous_engagements": 6,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.8,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 46000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1021@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2045",
+        "name": "Jordan Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "AI, Leadership",
+        "years_of_experience": 13,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 37,
+        "previous_topics": [
+            "Security at Scale",
+            "Future of Tech",
+            "AI in Business"
+        ],
+        "ratings": 4.0,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 9000,
+        "preferred_event_types": [
+            "Panel",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1014@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2046",
+        "name": "Riley Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Design, Security",
+        "years_of_experience": 22,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 0,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems",
+            "Security at Scale"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 35000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1016@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2047",
+        "name": "Casey Smith",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Data Science, Cloud",
+        "years_of_experience": 11,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 37,
+        "previous_topics": [
+            "Security at Scale",
+            "Future of Tech",
+            "AI in Business"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 4000,
+        "preferred_event_types": [
+            "Panel",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1014@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2048",
+        "name": "Alex Garcia",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Machine Learning, Data Science",
+        "years_of_experience": 14,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 3,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 3.6,
+        "audience_engagement_score": 4.4,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 19000,
+        "preferred_event_types": [
+            "Networking",
+            "Keynote",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1019@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2049",
+        "name": "Jamie Miller",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Data Science, Cloud",
+        "years_of_experience": 24,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 33,
+        "previous_topics": [
+            "Future of Tech"
+        ],
+        "ratings": 3.8,
+        "audience_engagement_score": 4.3,
+        "communication_score": 4.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 42000,
+        "preferred_event_types": [
+            "Expo",
+            "Keynote",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1018@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2050",
+        "name": "Sam Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Engineering",
+        "years_of_experience": 3,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "Future of Tech",
+            "Security at Scale",
+            "Leadership in Crisis"
+        ],
+        "ratings": 3.5,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 32000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1023@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2051",
+        "name": "Casey Miller",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Leadership, Design",
+        "years_of_experience": 5,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 0,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems",
+            "Security at Scale"
+        ],
+        "ratings": 4.8,
+        "audience_engagement_score": 5.0,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 14000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1016@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2052",
+        "name": "Sam Smith",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "AI, Engineering",
+        "years_of_experience": 16,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 11,
+        "previous_topics": [
+            "Building Scalable Systems",
+            "Future of Tech",
+            "Leadership in Crisis"
+        ],
+        "ratings": 3.9,
+        "audience_engagement_score": 4.4,
+        "communication_score": 3.7,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 15000,
+        "preferred_event_types": [
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1006@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2053",
+        "name": "Jordan Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Machine Learning, Machine Learning",
+        "years_of_experience": 15,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 0,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems",
+            "Security at Scale"
+        ],
+        "ratings": 4.0,
+        "audience_engagement_score": 3.6,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 26000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1016@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2054",
+        "name": "Morgan Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "AI, Marketing",
+        "years_of_experience": 3,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 43,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.9,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 1000,
+        "preferred_event_types": [
+            "Expo",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1007@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2055",
+        "name": "Jamie Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "AI, Leadership",
+        "years_of_experience": 15,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 31,
+        "previous_topics": [
+            "Future of Tech",
+            "Leadership in Crisis",
+            "AI in Business"
+        ],
+        "ratings": 4.0,
+        "audience_engagement_score": 3.7,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 12000,
+        "preferred_event_types": [
+            "Expo",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1012@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2056",
+        "name": "Jordan Smith",
+        "organization": "NVIDIA AI Labs",
+        "designation": "Principal Scientist",
+        "expertise": "Machine Learning, Cloud",
+        "years_of_experience": 11,
+        "biography": "Leading researcher in applied AI for enterprise innovation.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 18,
+        "previous_topics": [
+            "Generative AI",
+            "Responsible AI"
+        ],
+        "ratings": 4.5,
+        "audience_engagement_score": 4.1,
+        "communication_score": 4.9,
+        "previous_feedback": "Excellent delivery and audience engagement.",
+        "certifications": [
+            "Google ML Engineer"
+        ],
+        "achievements": [
+            "Published research",
+            "Industry keynote"
+        ],
+        "honorarium": 39000,
+        "preferred_event_types": [
+            "Seminar",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "ananya@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2057",
+        "name": "Casey Williams",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Security, Marketing",
+        "years_of_experience": 25,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 3,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 4.4,
+        "audience_engagement_score": 4.0,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 32000,
+        "preferred_event_types": [
+            "Networking",
+            "Keynote",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1019@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2058",
+        "name": "Sam Garcia",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Data Science, Cloud",
+        "years_of_experience": 13,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 38,
+        "previous_topics": [
+            "Future of Tech",
+            "AI in Business",
+            "Building Scalable Systems"
+        ],
+        "ratings": 3.5,
+        "audience_engagement_score": 4.1,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 21000,
+        "preferred_event_types": [
+            "Expo"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1017@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2059",
+        "name": "Riley Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Engineering, Machine Learning",
+        "years_of_experience": 14,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 1,
+        "previous_topics": [
+            "AI in Business",
+            "Security at Scale",
+            "Future of Tech"
+        ],
+        "ratings": 4.4,
+        "audience_engagement_score": 4.3,
+        "communication_score": 4.3,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 1000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1020@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2060",
+        "name": "Riley Jones",
+        "organization": "OpenAI Research",
+        "designation": "Research Engineer",
+        "expertise": "AI, Data Science",
+        "years_of_experience": 3,
+        "biography": "Core contributor to modern LLM research and deployment.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 25,
+        "previous_topics": [
+            "Generative AI",
+            "Prompt Engineering",
+            "Future of NLP"
+        ],
+        "ratings": 3.8,
+        "audience_engagement_score": 3.9,
+        "communication_score": 4.8,
+        "previous_feedback": "Fantastic insights into LLM internals.",
+        "certifications": [
+            "AWS ML Specialty"
+        ],
+        "achievements": [
+            "Multiple AI patents"
+        ],
+        "honorarium": 21000,
+        "preferred_event_types": [
+            "Seminar",
+            "Keynote",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Developers"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "arjun@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2061",
+        "name": "Casey Jones",
+        "organization": "IIT Delhi",
+        "designation": "Professor of Computer Science",
+        "expertise": "Machine Learning, Product",
+        "years_of_experience": 14,
+        "biography": "Experienced professor with strong industry alignment.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 22,
+        "previous_topics": [
+            "Cybersecurity",
+            "Cloud Strategy"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 3.7,
+        "communication_score": 4.7,
+        "previous_feedback": "Highly engaging, practical examples.",
+        "certifications": [
+            "CISSP"
+        ],
+        "achievements": [
+            "Research grants",
+            "Conference chair"
+        ],
+        "honorarium": 5000,
+        "preferred_event_types": [
+            "Seminar",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "vikram@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2062",
+        "name": "Alex Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Product",
+        "years_of_experience": 6,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Unavailable",
+        "previous_engagements": 13,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems"
+        ],
+        "ratings": 3.6,
+        "audience_engagement_score": 4.8,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 0,
+        "preferred_event_types": [
+            "Workshop",
+            "Seminar",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1009@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2063",
+        "name": "Riley Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Machine Learning",
+        "years_of_experience": 24,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 23,
+        "previous_topics": [
+            "Security at Scale",
+            "AI in Business"
+        ],
+        "ratings": 5.0,
+        "audience_engagement_score": 4.6,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 30000,
+        "preferred_event_types": [
+            "Workshop",
+            "Networking",
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1022@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2064",
+        "name": "Morgan Garcia",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Machine Learning, Data Science",
+        "years_of_experience": 17,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 0,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems",
+            "Security at Scale"
+        ],
+        "ratings": 5.0,
+        "audience_engagement_score": 4.0,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 25000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1016@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2065",
+        "name": "Sam Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Leadership",
+        "years_of_experience": 14,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 43,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 3.6,
+        "audience_engagement_score": 4.0,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 20000,
+        "preferred_event_types": [
+            "Expo",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1007@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2066",
+        "name": "Jamie Miller",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Data Science",
+        "years_of_experience": 6,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 50,
+        "previous_topics": [
+            "Leadership in Crisis"
+        ],
+        "ratings": 5.0,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 8000,
+        "preferred_event_types": [
+            "Seminar",
+            "Panel",
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1011@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2067",
+        "name": "Jamie Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Leadership, Machine Learning",
+        "years_of_experience": 20,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 37,
+        "previous_topics": [
+            "Security at Scale",
+            "Future of Tech",
+            "AI in Business"
+        ],
+        "ratings": 3.7,
+        "audience_engagement_score": 4.3,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 41000,
+        "preferred_event_types": [
+            "Panel",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1014@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2068",
+        "name": "Taylor Brown",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Design, Leadership",
+        "years_of_experience": 7,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 31,
+        "previous_topics": [
+            "Future of Tech",
+            "Leadership in Crisis",
+            "AI in Business"
+        ],
+        "ratings": 3.6,
+        "audience_engagement_score": 4.3,
+        "communication_score": 4.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 22000,
+        "preferred_event_types": [
+            "Expo",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1012@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2069",
+        "name": "Morgan Jones",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Data Science, Machine Learning",
+        "years_of_experience": 19,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 33,
+        "previous_topics": [
+            "Future of Tech"
+        ],
+        "ratings": 4.3,
+        "audience_engagement_score": 4.6,
+        "communication_score": 4.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 8000,
+        "preferred_event_types": [
+            "Expo",
+            "Keynote",
+            "Panel"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1018@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2070",
+        "name": "Taylor Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Leadership, Marketing",
+        "years_of_experience": 24,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 17,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 4.1,
+        "audience_engagement_score": 3.5,
+        "communication_score": 4.6,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 27000,
+        "preferred_event_types": [
+            "Seminar",
+            "Networking",
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1008@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2071",
+        "name": "Jamie Smith",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Product",
+        "years_of_experience": 19,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 11,
+        "previous_topics": [
+            "Security at Scale"
+        ],
+        "ratings": 4.4,
+        "audience_engagement_score": 4.6,
+        "communication_score": 4.6,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 16000,
+        "preferred_event_types": [
+            "Keynote"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1024@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2072",
+        "name": "Riley Johnson",
+        "organization": "NVIDIA AI Labs",
+        "designation": "Principal Scientist",
+        "expertise": "Engineering, Leadership",
+        "years_of_experience": 16,
+        "biography": "Leading researcher in applied AI for enterprise innovation.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 18,
+        "previous_topics": [
+            "Generative AI",
+            "Responsible AI"
+        ],
+        "ratings": 3.7,
+        "audience_engagement_score": 4.0,
+        "communication_score": 4.9,
+        "previous_feedback": "Excellent delivery and audience engagement.",
+        "certifications": [
+            "Google ML Engineer"
+        ],
+        "achievements": [
+            "Published research",
+            "Industry keynote"
+        ],
+        "honorarium": 34000,
+        "preferred_event_types": [
+            "Seminar",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "ananya@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2073",
+        "name": "Sam Brown",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Leadership, Product",
+        "years_of_experience": 20,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 44,
+        "previous_topics": [
+            "Building Scalable Systems"
+        ],
+        "ratings": 4.5,
+        "audience_engagement_score": 3.9,
+        "communication_score": 3.9,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 11000,
+        "preferred_event_types": [
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1010@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2074",
+        "name": "Taylor Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Product, Design",
+        "years_of_experience": 8,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English",
+        "availability": "Available",
+        "previous_engagements": 0,
+        "previous_topics": [
+            "AI in Business",
+            "Building Scalable Systems",
+            "Security at Scale"
+        ],
+        "ratings": 3.7,
+        "audience_engagement_score": 4.7,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 44000,
+        "preferred_event_types": [
+            "Keynote",
+            "Panel",
+            "Seminar",
+            "Networking"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals",
+            "Developers",
+            "Executives"
+        ],
+        "delivery_mode": "Offline",
+        "contact_info": "speaker1016@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2075",
+        "name": "Casey Johnson",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Design, Data Science",
+        "years_of_experience": 15,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 26,
+        "previous_topics": [
+            "AI in Business"
+        ],
+        "ratings": 3.9,
+        "audience_engagement_score": 4.1,
+        "communication_score": 4.4,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 4000,
+        "preferred_event_types": [
+            "Conference"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1015@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2076",
+        "name": "Jordan Garcia",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Engineering, Cloud",
+        "years_of_experience": 9,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, French",
+        "availability": "Available",
+        "previous_engagements": 37,
+        "previous_topics": [
+            "Security at Scale",
+            "Future of Tech",
+            "AI in Business"
+        ],
+        "ratings": 4.9,
+        "audience_engagement_score": 4.5,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 48000,
+        "preferred_event_types": [
+            "Panel",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1014@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2077",
+        "name": "Jamie Davis",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, AI",
+        "years_of_experience": 3,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, Spanish",
+        "availability": "Available",
+        "previous_engagements": 23,
+        "previous_topics": [
+            "Security at Scale",
+            "AI in Business"
+        ],
+        "ratings": 3.6,
+        "audience_engagement_score": 4.2,
+        "communication_score": 3.8,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 21000,
+        "preferred_event_types": [
+            "Workshop",
+            "Networking",
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Students",
+            "Professionals"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1022@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2078",
+        "name": "Jamie Smith",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Engineering, Security",
+        "years_of_experience": 12,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 37,
+        "previous_topics": [
+            "Security at Scale",
+            "Future of Tech",
+            "AI in Business"
+        ],
+        "ratings": 4.2,
+        "audience_engagement_score": 4.9,
+        "communication_score": 4.5,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 20000,
+        "preferred_event_types": [
+            "Panel",
+            "Workshop"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Online",
+        "contact_info": "speaker1014@example.com",
+        "status": "Available"
+    },
+    {
+        "id": "SP-2079",
+        "name": "Morgan Brown",
+        "organization": "Random Corp",
+        "designation": "Industry Expert",
+        "expertise": "Cloud, Product",
+        "years_of_experience": 24,
+        "biography": "Experienced professional with broad domain expertise.",
+        "languages": "English, German",
+        "availability": "Available",
+        "previous_engagements": 11,
+        "previous_topics": [
+            "Building Scalable Systems",
+            "Future of Tech",
+            "Leadership in Crisis"
+        ],
+        "ratings": 4.4,
+        "audience_engagement_score": 4.0,
+        "communication_score": 3.7,
+        "previous_feedback": "Consistently good delivery.",
+        "certifications": [],
+        "achievements": [],
+        "honorarium": 50000,
+        "preferred_event_types": [
+            "Seminar"
+        ],
+        "preferred_audience": [
+            "Students"
+        ],
+        "delivery_mode": "Hybrid",
+        "contact_info": "speaker1006@example.com",
+        "status": "Available"
+    }
+]

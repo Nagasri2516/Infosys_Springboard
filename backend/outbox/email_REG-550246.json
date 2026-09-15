@@ -1,0 +1,10 @@
+{
+  "id": "REG-550246",
+  "to": "nagasri@gmail.com",
+  "name": "asri",
+  "subject": "Registration Confirmed \u2013 REG-550246 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-550246.html",
+  "sent_at": "2026-08-04T15:01:50.235003Z",
+  "delivered": false,
+  "mode": "outbox"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "REG-160773",
+  "to": "rsmith@freelance.org",
+  "name": "Robert Smith",
+  "subject": "Registration Confirmed \u2013 REG-160773 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-160773.html",
+  "sent_at": "2026-08-21T15:08:10.686808Z",
+  "delivered": false,
+  "mode": "outbox"
+}

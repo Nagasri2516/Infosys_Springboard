@@ -1,0 +1,10 @@
+{
+  "id": "REG-876128",
+  "to": "jane.doe@standard.com",
+  "name": "Jane Doe",
+  "subject": "Registration Confirmed \u2013 REG-876128 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-876128.html",
+  "sent_at": "2026-08-21T15:08:18.503939Z",
+  "delivered": false,
+  "mode": "outbox"
+}

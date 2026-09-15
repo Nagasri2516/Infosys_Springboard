@@ -1,0 +1,10 @@
+{
+  "id": "REG-878885",
+  "to": "emily.watson@mit.edu",
+  "name": "Emily Watson",
+  "subject": "Registration Confirmed \u2013 REG-878885 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-878885.html",
+  "sent_at": "2026-08-11T17:40:11.252036Z",
+  "delivered": false,
+  "mode": "outbox"
+}

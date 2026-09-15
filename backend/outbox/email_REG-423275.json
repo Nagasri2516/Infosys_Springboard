@@ -1,0 +1,10 @@
+{
+  "id": "REG-423275",
+  "to": "john.doe@example.com",
+  "name": "John Doe",
+  "subject": "Registration Confirmed \u2013 REG-423275 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-423275.html",
+  "sent_at": "2026-08-12T05:33:19.324425Z",
+  "delivered": false,
+  "mode": "outbox"
+}

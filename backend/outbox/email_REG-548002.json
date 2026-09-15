@@ -1,0 +1,10 @@
+{
+  "id": "REG-548002",
+  "to": "test@light.com",
+  "name": "Jane Light",
+  "subject": "Registration Confirmed \u2013 REG-548002 | Infosys Tech Summit 2026",
+  "html_file": "email_REG-548002.html",
+  "sent_at": "2026-08-02T11:15:30.661341Z",
+  "delivered": false,
+  "mode": "outbox"
+}
